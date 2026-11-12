@@ -1,30 +1,32 @@
 @import "tailwindcss";
 
-/* Token template Batu (arah baru): terang, hangat, foto-first, sudut membulat. */
+/* Token template Batu (revisi): conversion-first, putih + abu es + koral, Poppins. */
 @theme {
-  --color-cream: #fbf8f3;
-  --color-sand: #efe7da;
-  --color-teal: #0f4c4a;
-  --color-teal-deep: #0b3a38;
-  --color-sun: #f2a541;
-  --color-ink: #1d2624;
-  --color-muted: #5f6b68;
+  --color-snow: #ffffff;
+  --color-fog: #f4f6f9;
+  --color-ink: #0f172a;
+  --color-slate: #475569;
+  --color-coral: #d63a17;
+  --color-coral-deep: #bd3012;
+  --color-sky: #e8f0ff;
+  --color-star: #f5b301;
   --font-display: "Poppins", ui-sans-serif, system-ui, sans-serif;
   --font-body: "Poppins", ui-sans-serif, system-ui, sans-serif;
 }
 
 @layer base {
   html { scroll-behavior: smooth; }
-  body { @apply bg-cream font-body text-ink antialiased; }
+  body { @apply bg-snow font-body text-ink antialiased; }
   h1, h2, h3 { @apply font-display font-semibold tracking-tight; }
-  :focus-visible { @apply outline-2 outline-offset-2 outline-teal; }
+  :focus-visible { @apply outline-2 outline-offset-2 outline-coral; }
 }
 
 @layer components {
-  .btn-primary { @apply inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full bg-sun px-6 py-3 font-semibold text-ink transition hover:brightness-95; }
-  .btn-ghost { @apply inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full border border-teal/30 bg-cream px-6 py-3 font-semibold text-teal transition hover:border-teal; }
-  .eyebrow { @apply mb-3 inline-block rounded-full bg-sand px-3 py-1 text-xs font-semibold tracking-wide text-teal uppercase; }
-  .photo-slot { @apply flex items-center justify-center rounded-3xl bg-sand text-center text-sm text-muted; }
+  .btn-primary { @apply inline-flex min-h-[48px] items-center justify-center gap-2 rounded-xl bg-coral px-6 py-3 font-semibold text-snow transition hover:bg-coral-deep; }
+  .btn-ink { @apply inline-flex min-h-[48px] items-center justify-center gap-2 rounded-xl bg-ink px-6 py-3 font-semibold text-snow transition hover:bg-slate; }
+  .btn-outline { @apply inline-flex min-h-[48px] items-center justify-center gap-2 rounded-xl border-2 border-ink/15 bg-snow px-6 py-3 font-semibold text-ink transition hover:border-ink; }
+  .eyebrow { @apply mb-3 inline-block rounded-full bg-sky px-3 py-1 text-xs font-semibold tracking-wide text-ink uppercase; }
+  .photo-slot { @apply flex items-center justify-center rounded-2xl bg-fog text-center text-sm text-slate; }
 }
 
 @media (prefers-reduced-motion: reduce) {

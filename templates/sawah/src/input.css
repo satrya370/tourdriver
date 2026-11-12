@@ -1,32 +1,35 @@
 @import "tailwindcss";
 
-/* Token template Sawah. Semua warna dan font di markup diambil dari sini. */
+/* Token template Sawah (revisi): editorial, foto-first, putih + navy + emas. */
 @theme {
-  --color-paper: #f4efe6;
-  --color-sand: #e6dac8;
-  --color-moss: #2f4a2b;
-  --color-moss-deep: #223620;
-  --color-clay: #a65e2e;
-  --color-ink: #1f2a1d;
-  --color-muted: #5d6657;
-  --font-display: "Fraunces", ui-serif, Georgia, serif;
-  --font-body: "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
+  --color-snow: #ffffff;
+  --color-mist: #f1f3f6;
+  --color-navy: #14213d;
+  --color-navy-deep: #0b1426;
+  --color-copper: #b45309;
+  --color-gold: #fca311;
+  --color-ink: #111827;
+  --color-muted: #5b6472;
+  --font-display: "Playfair Display", ui-serif, Georgia, serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
 }
 
 @layer base {
   html { scroll-behavior: smooth; }
-  body { @apply bg-paper font-body text-ink antialiased; }
-  h1, h2, h3 { @apply font-display; font-optical-sizing: auto; }
-  :focus-visible { @apply outline-2 outline-offset-2 outline-clay; }
+  body { @apply bg-snow font-body text-ink antialiased; }
+  h1, h2, h3 { @apply font-display; }
+  :focus-visible { @apply outline-2 outline-offset-2 outline-gold; }
 }
 
 @layer components {
-  .btn-primary { @apply inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full bg-moss px-6 py-3 font-semibold text-paper transition hover:bg-moss-deep; }
-  .btn-ghost { @apply inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full border border-moss/30 px-6 py-3 font-semibold text-moss transition hover:border-moss; }
-  .eyebrow { @apply mb-3 flex items-center gap-3 text-sm font-semibold tracking-[0.12em] text-clay uppercase; }
-  .eyebrow::before { content: ""; @apply block h-px w-8 bg-clay; }
-  .rule { @apply border-t border-moss/15; }
-  .photo-slot { @apply flex items-center justify-center border border-dashed border-moss/30 bg-sand text-center text-sm text-muted; }
+  .btn-primary { @apply inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full bg-gold px-6 py-3 font-semibold text-navy-deep transition hover:brightness-95; }
+  .btn-dark { @apply inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full bg-navy px-6 py-3 font-semibold text-snow transition hover:bg-navy-deep; }
+  .btn-ghost { @apply inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full border border-navy/30 px-6 py-3 font-semibold text-navy transition hover:border-navy; }
+  .btn-ghost-light { @apply inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full border border-snow/60 px-6 py-3 font-semibold text-snow transition hover:border-snow; }
+  .eyebrow { @apply mb-3 flex items-center gap-3 text-sm font-semibold tracking-[0.12em] text-copper uppercase; }
+  .eyebrow::before { content: ""; @apply block h-px w-8 bg-current; }
+  .rule { @apply border-t border-navy/15; }
+  .photo-slot { @apply flex items-center justify-center border border-dashed border-navy/30 bg-mist text-center text-sm text-muted; }
 }
 
 @media (prefers-reduced-motion: reduce) {
