@@ -4,16 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- DUMMY: semua nama, angka, dan ulasan adalah contoh untuk template. -->
-  <title>Wayan Sudiarta — Private Driver in Ubud, Bali | Sudiarta Bali Drive</title>
-  <meta name="description" content="Private driver in Ubud with 11 years on Bali's roads. Full-day charters from IDR 650.000 with petrol and parking included. Book on WhatsApp.">
+  <title>Bali Private Driver Tours and Travel Guide | Sudiarta Bali Drive</title>
+  <meta name="description" content="Private driver tours in Bali from Ubud, plus a short travel guide: best time to visit, what to do, where to eat. Full-day charters from IDR 650.000.">
   <link rel="canonical" href="https://www.example.com/">
   <link rel="alternate" hreflang="en" href="https://www.example.com/">
   <link rel="alternate" hreflang="id" href="https://www.example.com/id/">
   <link rel="alternate" hreflang="x-default" href="https://www.example.com/">
   <meta name="theme-color" content="#2f4a2b">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Wayan Sudiarta — Private Driver in Ubud, Bali">
-  <meta property="og:description" content="Private driver in Ubud. Tours, airport transfers and custom day trips across Bali.">
+  <meta property="og:title" content="Bali Private Driver Tours and Travel Guide">
+  <meta property="og:description" content="Private driver tours in Bali, with a short guide to what to do, eat and pack.">
   <meta property="og:url" content="https://www.example.com/">
   <meta property="og:image" content="https://www.example.com/assets/img/og-1200x630.jpg">
   <meta property="og:locale" content="en_US">
@@ -43,9 +43,16 @@
         "openingHours": "Mo-Su 04:00-22:00"
       },
       {
+        "@type": "TouristDestination",
+        "name": "Bali",
+        "description": "Indonesian island known for rice terraces, temples, volcanoes and beaches.",
+        "touristType": ["Culture", "Nature", "Beach"],
+        "geo": { "@type": "GeoCoordinates", "latitude": -8.4095, "longitude": 115.1889 }
+      },
+      {
         "@type": "FAQPage",
         "mainEntity": [
-          { "@type": "Question", "name": "What time do you start for a Kintamani sunrise?", "acceptedAnswer": { "@type": "Answer", "text": "We leave Ubud around 03.30 so we reach Kintamani before sunrise. Pickup from hotels in Ubud takes about 20 minutes." } },
+          { "@type": "Question", "name": "When is the best time to visit Bali?", "acceptedAnswer": { "@type": "Answer", "text": "April to October is the dry season, with clearer skies for sunrise trips. November to March is wetter but greener, with fewer crowds at the temples." } },
           { "@type": "Question", "name": "Is petrol and parking included in the price?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Full-day and half-day charters include petrol, parking and bottled water. Entrance tickets and meals are paid by the guest." } }
         ]
       },
@@ -96,85 +103,111 @@
 <main id="main">
 
 <!-- component:hero -->
-<section data-component="hero" class="mx-auto grid max-w-6xl gap-10 px-5 pb-16 pt-10 md:grid-cols-12 md:pt-16">
-  <div class="md:col-span-7 md:pt-6">
-    <p class="eyebrow" data-field="business.area">Private driver · Ubud, Bali</p>
-    <h1 class="text-[2.6rem] leading-[1.05] font-semibold text-moss sm:text-6xl" data-field="hero.headline">Bali by car, with a driver who grew up on these roads.</h1>
-    <p class="mt-6 max-w-xl text-lg leading-relaxed text-ink/80" data-field="hero.subheadline">Wayan has driven guests around Bali since 2014. Full-day charters from IDR 650.000, with petrol and parking included.</p>
+<section data-component="hero" class="relative isolate overflow-hidden bg-moss-deep text-paper">
+  <div class="absolute inset-0 -z-20 flex items-start justify-end p-4 text-xs text-paper/40" data-field="hero.photo">[FOTO: sawah bertingkat Tegallalang, pagi, landscape 16:9, min. 2000px]</div>
+  <div class="absolute inset-0 -z-10 bg-gradient-to-t from-moss-deep via-moss-deep/50 to-moss-deep/10" aria-hidden="true"></div>
+  <div class="mx-auto flex min-h-[78vh] max-w-6xl flex-col justify-end px-5 pb-14 pt-28 md:pb-20">
+    <p class="eyebrow !text-sand" data-field="business.area">Private driver · Ubud, Bali</p>
+    <h1 class="max-w-3xl text-5xl leading-[1.02] font-semibold sm:text-7xl" data-field="hero.headline">Bali tours with a private driver</h1>
+    <p class="mt-5 max-w-xl text-lg leading-relaxed text-paper/85" data-field="hero.subheadline">Eleven years on these roads. Full-day charters from IDR 650.000, petrol and parking included.</p>
     <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-      <a href="https://wa.me/6281200000000?text=Hello%20Wayan%2C%20I%27d%20like%20a%20full-day%20driver" class="btn-primary" data-field="contact.whatsapp_link">Chat on WhatsApp</a>
-      <a href="activities.html" class="btn-ghost">See tours</a>
+      <a href="https://wa.me/6281200000000?text=Hello%20Wayan%2C%20I%27d%20like%20a%20full-day%20driver" class="inline-flex min-h-[48px] items-center justify-center rounded-full bg-paper px-6 font-semibold text-moss transition hover:bg-sand" data-field="contact.whatsapp_link">Chat on WhatsApp</a>
+      <a href="#tours" class="inline-flex min-h-[48px] items-center justify-center rounded-full border border-paper/50 px-6 font-semibold text-paper transition hover:border-paper">See all tours</a>
     </div>
-    <p class="mt-5 text-sm text-muted">Usually replies within the hour · English and Bahasa Indonesia</p>
-  </div>
-  <div class="md:col-span-5">
-    <div class="photo-slot aspect-[4/5] rounded-[28px] p-6" data-field="driver.photo_hero">[FOTO: driver berdiri di samping mobil, cahaya pagi, portrait 4:5]</div>
-    <p class="mt-3 text-xs text-muted">Photo: Wayan, Ubud rice terraces.</p>
   </div>
 </section>
 <!-- /component:hero -->
 
-<!-- component:trust-strip -->
-<section data-component="trust-strip" class="border-y border-moss/15 bg-sand/60">
-  <dl class="mx-auto grid max-w-6xl grid-cols-2 gap-6 px-5 py-8 md:grid-cols-4">
-    <div><dt class="text-sm text-muted">Driving in Bali</dt><dd class="font-display text-3xl text-moss" data-field="business.years">11 years</dd></div>
-    <div><dt class="text-sm text-muted">Google rating</dt><dd class="font-display text-3xl text-moss" data-field="reviews.summary">4.9 / 5</dd></div>
-    <div><dt class="text-sm text-muted">Languages</dt><dd class="font-display text-3xl text-moss" data-field="business.languages">EN · ID</dd></div>
-    <div><dt class="text-sm text-muted">Typical start</dt><dd class="font-display text-3xl text-moss" data-field="business.start_time">03.30 for sunrise</dd></div>
-  </dl>
-</section>
-<!-- /component:trust-strip -->
+<!-- component:anchor-nav -->
+<nav data-component="anchor-nav" aria-label="On this page" class="sticky top-[73px] z-30 border-b border-moss/15 bg-paper/95 backdrop-blur">
+  <ul class="mx-auto flex max-w-6xl gap-1 overflow-x-auto px-5 text-sm font-semibold">
+    <li><a href="#tours" class="inline-flex min-h-[48px] items-center whitespace-nowrap px-3 hover:text-clay">Tours</a></li>
+    <li><a href="#prices" class="inline-flex min-h-[48px] items-center whitespace-nowrap px-3 hover:text-clay">Prices</a></li>
+    <li><a href="#reviews" class="inline-flex min-h-[48px] items-center whitespace-nowrap px-3 hover:text-clay">Reviews</a></li>
+    <li><a href="#glance" class="inline-flex min-h-[48px] items-center whitespace-nowrap px-3 hover:text-clay">Bali at a glance</a></li>
+    <li><a href="#things-to-do" class="inline-flex min-h-[48px] items-center whitespace-nowrap px-3 hover:text-clay">Things to do</a></li>
+    <li><a href="#food" class="inline-flex min-h-[48px] items-center whitespace-nowrap px-3 hover:text-clay">What to eat</a></li>
+    <li><a href="#pack" class="inline-flex min-h-[48px] items-center whitespace-nowrap px-3 hover:text-clay">What to pack</a></li>
+    <li><a href="#faq" class="inline-flex min-h-[48px] items-center whitespace-nowrap px-3 hover:text-clay">FAQ</a></li>
+  </ul>
+</nav>
+<!-- /component:anchor-nav -->
 
-<!-- component:how-to-book -->
-<section data-component="how-to-book" class="mx-auto max-w-6xl px-5 py-20">
-  <p class="eyebrow">How booking works</p>
-  <h2 class="max-w-2xl text-4xl font-semibold text-moss sm:text-5xl">Three messages, then the car is at your hotel.</h2>
-  <ol class="mt-12 grid gap-8 md:grid-cols-3">
-    <li class="rule pt-6"><span class="font-display text-5xl text-clay">01</span><h3 class="mt-3 text-2xl font-semibold">Message on WhatsApp</h3><p class="mt-2 text-ink/75">Tell us the date, hotel and what you want to see. Voice notes are fine.</p></li>
-    <li class="rule pt-6"><span class="font-display text-5xl text-clay">02</span><h3 class="mt-3 text-2xl font-semibold">Choose or shape a route</h3><p class="mt-2 text-ink/75">Pick one of our tours, or we build a day around your plans. You get the price before you pay.</p></li>
-    <li class="rule pt-6"><span class="font-display text-5xl text-clay">03</span><h3 class="mt-3 text-2xl font-semibold">Pickup at your hotel</h3><p class="mt-2 text-ink/75">We confirm the pickup time the evening before. Pay by bank transfer or cash in IDR.</p></li>
-  </ol>
+<!-- component:intro -->
+<section data-component="intro" class="mx-auto grid max-w-6xl gap-8 px-5 py-16 md:grid-cols-12 md:py-20">
+  <div class="md:col-span-5">
+    <p class="eyebrow">Travel guide</p>
+    <h2 class="text-4xl font-semibold text-moss sm:text-5xl">See Bali from the front seat.</h2>
+  </div>
+  <div class="space-y-4 text-lg leading-relaxed text-ink/80 md:col-span-6 md:col-start-7" data-field="intro.text">
+    <p>Most of Bali's best places are a long way apart, and the roads between them are slow. A private driver means you choose when to leave, where to stop, and how long to stay.</p>
+    <p>Wayan was born in Ubud and has driven guests since 2014. Below you will find the tours he runs most, what they cost, and a short guide for planning your trip.</p>
+  </div>
 </section>
-<!-- /component:how-to-book -->
+<!-- /component:intro -->
 
 <!-- component:tour-grid -->
-<section data-component="tour-grid" class="bg-moss text-paper">
+<section data-component="tour-grid" id="tours" class="scroll-mt-32 bg-moss text-paper">
   <div class="mx-auto max-w-6xl px-5 py-20">
     <div class="flex flex-col justify-between gap-4 md:flex-row md:items-end">
       <div>
         <p class="eyebrow !text-sand">Popular tours</p>
-        <h2 class="text-4xl font-semibold sm:text-5xl">Start with one of these.</h2>
+        <h2 class="text-4xl font-semibold sm:text-5xl">Our most booked days.</h2>
       </div>
-      <a href="activities.html" class="font-semibold underline decoration-clay decoration-2 underline-offset-8">All tours</a>
+      <a href="activities.html" class="font-semibold underline decoration-clay decoration-2 underline-offset-8">See all tours</a>
     </div>
     <div class="mt-12 grid gap-6 md:grid-cols-3" data-repeat="tours">
       <!-- component:tour-card -->
-      <article data-component="tour-card" data-repeat-item class="flex flex-col rounded-2xl bg-paper text-ink">
-        <div class="photo-slot m-3 aspect-[3/2] rounded-xl text-xs" data-field="tours.0.photo">[FOTO: Kintamani, kabut pagi]</div>
-        <div class="flex flex-1 flex-col p-5 pt-2">
-          <p class="text-sm font-semibold text-clay" data-field="tours.0.duration">6 hours · from 03.30</p>
-          <h3 class="mt-1 text-2xl font-semibold text-moss" data-field="tours.0.title">Kintamani Sunrise</h3>
-          <p class="mt-2 flex-1 text-ink/75" data-field="tours.0.summary">Volcano rim viewpoint, coffee stop, then back to Ubud before lunch.</p>
-          <p class="mt-4 font-display text-2xl">IDR <span data-field="tours.0.price">750.000</span></p>
+      <article data-component="tour-card" data-repeat-item class="flex flex-col overflow-hidden rounded-2xl bg-paper text-ink">
+        <div class="photo-slot aspect-[3/2] text-xs" data-field="tours.0.photo">[FOTO: Kintamani, kabut pagi]</div>
+        <div class="flex flex-1 flex-col p-5">
+          <h3 class="text-2xl font-semibold text-moss" data-field="tours.0.title">Kintamani Sunrise</h3>
+          <dl class="mt-4 grid grid-cols-3 gap-3 border-y border-moss/15 py-4 text-center">
+            <div><dd class="font-display text-2xl text-moss" data-field="tours.0.hours">6</dd><dt class="text-xs text-muted">hours</dt></div>
+            <div><dd class="font-display text-2xl text-moss" data-field="tours.0.stops">3</dd><dt class="text-xs text-muted">stops</dt></div>
+            <div><dd class="font-display text-2xl text-moss" data-field="tours.0.start">03.30</dd><dt class="text-xs text-muted">pickup</dt></div>
+          </dl>
+          <p class="mt-4 text-sm text-muted" data-field="tours.0.route">Ubud → Kintamani → Penglipuran → Ubud</p>
+          <p class="mt-2 flex-1 text-ink/75" data-field="tours.0.summary">Volcano rim viewpoint, coffee stop, then back before lunch.</p>
+          <div class="mt-5 flex items-end justify-between gap-3">
+            <p class="text-sm text-muted">From <span class="block font-display text-2xl text-ink">IDR <span data-field="tours.0.price">750.000</span></span></p>
+            <a href="activities.html#sunrise" class="btn-ghost !min-h-[44px] !px-5 !py-2 text-sm">View tour</a>
+          </div>
         </div>
       </article>
       <!-- /component:tour-card -->
-      <article data-component="tour-card" data-repeat-item data-repeat-clone class="flex flex-col rounded-2xl bg-paper text-ink">
-        <div class="photo-slot m-3 aspect-[3/2] rounded-xl text-xs">[FOTO: Tegallalang, sawah bertingkat]</div>
-        <div class="flex flex-1 flex-col p-5 pt-2">
-          <p class="text-sm font-semibold text-clay">10 hours · full day</p>
-          <h3 class="mt-1 text-2xl font-semibold text-moss">Ubud Terraces and Villages</h3>
-          <p class="mt-2 flex-1 text-ink/75">Tegallalang, a woodcarving village, Tirta Empul and a long lunch with a view.</p>
-          <p class="mt-4 font-display text-2xl">IDR 650.000</p>
+      <article data-component="tour-card" data-repeat-item data-repeat-clone class="flex flex-col overflow-hidden rounded-2xl bg-paper text-ink">
+        <div class="photo-slot aspect-[3/2] text-xs">[FOTO: Tegallalang, sawah bertingkat]</div>
+        <div class="flex flex-1 flex-col p-5">
+          <h3 class="text-2xl font-semibold text-moss">Ubud Terraces and Villages</h3>
+          <dl class="mt-4 grid grid-cols-3 gap-3 border-y border-moss/15 py-4 text-center">
+            <div><dd class="font-display text-2xl text-moss">10</dd><dt class="text-xs text-muted">hours</dt></div>
+            <div><dd class="font-display text-2xl text-moss">5</dd><dt class="text-xs text-muted">stops</dt></div>
+            <div><dd class="font-display text-2xl text-moss">08.00</dd><dt class="text-xs text-muted">pickup</dt></div>
+          </dl>
+          <p class="mt-4 text-sm text-muted">Ubud → Tegallalang → Tirta Empul → Ubud</p>
+          <p class="mt-2 flex-1 text-ink/75">Terraces, a woodcarving village, a spring temple and a long lunch with a view.</p>
+          <div class="mt-5 flex items-end justify-between gap-3">
+            <p class="text-sm text-muted">From <span class="block font-display text-2xl text-ink">IDR 650.000</span></p>
+            <a href="activities.html#culture" class="btn-ghost !min-h-[44px] !px-5 !py-2 text-sm">View tour</a>
+          </div>
         </div>
       </article>
-      <article data-component="tour-card" data-repeat-item data-repeat-clone class="flex flex-col rounded-2xl bg-paper text-ink">
-        <div class="photo-slot m-3 aspect-[3/2] rounded-xl text-xs">[FOTO: Uluwatu, tebing saat sore]</div>
-        <div class="flex flex-1 flex-col p-5 pt-2">
-          <p class="text-sm font-semibold text-clay">5 hours · half day</p>
-          <h3 class="mt-1 text-2xl font-semibold text-moss">Uluwatu Sunset</h3>
-          <p class="mt-2 flex-1 text-ink/75">Cliff temple at golden hour. Drop-off at the warung, pickup after the kecak dance.</p>
-          <p class="mt-4 font-display text-2xl">IDR 400.000</p>
+      <article data-component="tour-card" data-repeat-item data-repeat-clone class="flex flex-col overflow-hidden rounded-2xl bg-paper text-ink">
+        <div class="photo-slot aspect-[3/2] text-xs">[FOTO: Uluwatu, tebing saat sore]</div>
+        <div class="flex flex-1 flex-col p-5">
+          <h3 class="text-2xl font-semibold text-moss">Uluwatu Sunset</h3>
+          <dl class="mt-4 grid grid-cols-3 gap-3 border-y border-moss/15 py-4 text-center">
+            <div><dd class="font-display text-2xl text-moss">5</dd><dt class="text-xs text-muted">hours</dt></div>
+            <div><dd class="font-display text-2xl text-moss">2</dd><dt class="text-xs text-muted">stops</dt></div>
+            <div><dd class="font-display text-2xl text-moss">15.00</dd><dt class="text-xs text-muted">pickup</dt></div>
+          </dl>
+          <p class="mt-4 text-sm text-muted">Hotel → Uluwatu temple → Jimbaran → Hotel</p>
+          <p class="mt-2 flex-1 text-ink/75">Cliff temple at golden hour, then the kecak dance. Drop-off at your hotel.</p>
+          <div class="mt-5 flex items-end justify-between gap-3">
+            <p class="text-sm text-muted">From <span class="block font-display text-2xl text-ink">IDR 400.000</span></p>
+            <a href="activities.html#coast" class="btn-ghost !min-h-[44px] !px-5 !py-2 text-sm">View tour</a>
+          </div>
         </div>
       </article>
     </div>
@@ -183,7 +216,7 @@
 <!-- /component:tour-grid -->
 
 <!-- component:pricing -->
-<section data-component="pricing" class="mx-auto grid max-w-6xl gap-12 px-5 py-20 md:grid-cols-2">
+<section data-component="pricing" id="prices" class="mx-auto grid max-w-6xl scroll-mt-32 gap-12 px-5 py-20 md:grid-cols-2">
   <div>
     <p class="eyebrow">Prices</p>
     <h2 class="text-4xl font-semibold text-moss sm:text-5xl">What it costs, in IDR.</h2>
@@ -220,77 +253,155 @@
 </section>
 <!-- /component:pricing -->
 
-<!-- component:itinerary-teaser -->
-<section data-component="itinerary-teaser" class="bg-sand/60">
-  <div class="mx-auto grid max-w-6xl gap-12 px-5 py-20 md:grid-cols-2 md:items-center">
-    <div>
-      <p class="eyebrow">A sample day</p>
-      <h2 class="text-4xl font-semibold text-moss sm:text-5xl">This is what a day looks like.</h2>
-      <p class="mt-4 text-ink/75">Every guest gets a printed or shared itinerary with times, places and tips. This is one from a real route.</p>
-      <a href="itinerary.html" class="btn-ghost mt-8">Open the full itinerary</a>
+<!-- component:reviews-summary -->
+<section data-component="reviews-summary" id="reviews" class="scroll-mt-32 bg-sand/60">
+  <!-- DUMMY: angka dan ulasan contoh. Ganti dengan data asli; sembunyikan section jika belum ada ulasan. -->
+  <div class="mx-auto max-w-6xl px-5 py-20">
+    <p class="eyebrow">Reviews</p>
+    <h2 class="max-w-2xl text-4xl font-semibold text-moss sm:text-5xl">What guests say after the trip.</h2>
+    <div class="mt-12 grid gap-12 md:grid-cols-12">
+      <div class="md:col-span-4">
+        <p class="font-display text-7xl text-moss" data-field="reviews.rating">4.9</p>
+        <p class="text-sm text-muted">out of 5, from <span data-field="reviews.count">180</span> Google reviews</p>
+        <dl class="mt-6 space-y-2 text-sm" data-repeat="reviews.breakdown">
+          <div class="flex items-center gap-3"><dt class="w-10">5 star</dt><dd class="h-2 flex-1 overflow-hidden rounded-full bg-moss/15"><span class="block h-full w-[91%] bg-moss"></span></dd><dd class="w-8 text-right">164</dd></div>
+          <div class="flex items-center gap-3"><dt class="w-10">4 star</dt><dd class="h-2 flex-1 overflow-hidden rounded-full bg-moss/15"><span class="block h-full w-[8%] bg-moss"></span></dd><dd class="w-8 text-right">14</dd></div>
+          <div class="flex items-center gap-3"><dt class="w-10">3 star</dt><dd class="h-2 flex-1 overflow-hidden rounded-full bg-moss/15"><span class="block h-full w-[1%] bg-moss"></span></dd><dd class="w-8 text-right">2</dd></div>
+          <div class="flex items-center gap-3"><dt class="w-10">2 star</dt><dd class="h-2 flex-1 overflow-hidden rounded-full bg-moss/15"><span class="block h-full w-0 bg-moss"></span></dd><dd class="w-8 text-right">0</dd></div>
+          <div class="flex items-center gap-3"><dt class="w-10">1 star</dt><dd class="h-2 flex-1 overflow-hidden rounded-full bg-moss/15"><span class="block h-full w-0 bg-moss"></span></dd><dd class="w-8 text-right">0</dd></div>
+        </dl>
+        <a href="https://www.google.com/maps" class="mt-6 inline-block font-semibold text-moss underline decoration-clay decoration-2 underline-offset-8" data-field="reviews.source_url">Read all reviews on Google</a>
+      </div>
+      <div class="grid gap-6 md:col-span-8 md:grid-cols-2" data-repeat="testimonials">
+        <blockquote class="rounded-2xl bg-paper p-6" data-repeat-item>
+          <p class="text-lg leading-relaxed" data-field="testimonials.0.text">"He picked us up at 3.30 and we were the first at the rim. Patient with our kids."</p>
+          <footer class="mt-5 text-sm text-muted"><span class="font-semibold text-ink" data-field="testimonials.0.name">Sarah K.</span> · <span data-field="testimonials.0.origin">Melbourne</span> · <span data-field="testimonials.0.date">March 2026</span></footer>
+        </blockquote>
+        <blockquote class="rounded-2xl bg-paper p-6" data-repeat-item data-repeat-clone>
+          <p class="text-lg leading-relaxed">"Changed the route for us when the road was closed. Good advice, no pressure to buy anything."</p>
+          <footer class="mt-5 text-sm text-muted"><span class="font-semibold text-ink">Tomas R.</span> · Berlin · January 2026</footer>
+        </blockquote>
+        <blockquote class="rounded-2xl bg-paper p-6 md:col-span-2" data-repeat-item data-repeat-clone>
+          <p class="text-lg leading-relaxed">"Airport to Ubud in heavy traffic, calm the whole way. The car was spotless."</p>
+          <footer class="mt-5 text-sm text-muted"><span class="font-semibold text-ink">Priya M.</span> · Singapore · November 2025</footer>
+        </blockquote>
+      </div>
     </div>
-    <ol class="space-y-5 border-l-2 border-clay/50 pl-6" data-repeat="day-preview">
-      <li><p class="text-sm font-semibold text-clay">03.30 · Pickup</p><p class="font-semibold">Hotel in Ubud</p></li>
-      <li><p class="text-sm font-semibold text-clay">05.30 · Viewpoint</p><p class="font-semibold">Penelokan, Mount Batur at sunrise</p></li>
-      <li><p class="text-sm font-semibold text-clay">08.00 · Breakfast</p><p class="font-semibold">Coffee and eggs at the rim</p></li>
-      <li><p class="text-sm font-semibold text-clay">10.00 · Village</p><p class="font-semibold">Penglipuran, bamboo village</p></li>
-    </ol>
   </div>
 </section>
-<!-- /component:itinerary-teaser -->
+<!-- /component:reviews-summary -->
+
+<!-- component:at-a-glance -->
+<section data-component="at-a-glance" id="glance" class="mx-auto max-w-6xl scroll-mt-32 px-5 py-20">
+  <p class="eyebrow">Bali at a glance</p>
+  <h2 class="max-w-2xl text-4xl font-semibold text-moss sm:text-5xl">The basics before you book.</h2>
+  <p class="mt-4 max-w-2xl text-lg text-ink/75" data-field="glance.intro">Bali is a small island with a big range: volcano rims at 1.500 metres, rice terraces, reef beaches and temples on cliffs.</p>
+  <dl class="mt-12 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-moss/15 bg-moss/15 md:grid-cols-3" data-repeat="glance.facts">
+    <div class="bg-paper p-6"><dt class="text-sm text-muted">Currency</dt><dd class="mt-1 font-display text-2xl text-moss">Rupiah (IDR)</dd></div>
+    <div class="bg-paper p-6"><dt class="text-sm text-muted">Language</dt><dd class="mt-1 font-display text-2xl text-moss">Bahasa Indonesia, Balinese</dd></div>
+    <div class="bg-paper p-6"><dt class="text-sm text-muted">Time zone</dt><dd class="mt-1 font-display text-2xl text-moss">WITA (UTC+8)</dd></div>
+    <div class="bg-paper p-6"><dt class="text-sm text-muted">Dry season</dt><dd class="mt-1 font-display text-2xl text-moss">April to October</dd></div>
+    <div class="bg-paper p-6"><dt class="text-sm text-muted">Temperature</dt><dd class="mt-1 font-display text-2xl text-moss">27–32 °C on the coast</dd></div>
+    <div class="bg-paper p-6"><dt class="text-sm text-muted">Airport</dt><dd class="mt-1 font-display text-2xl text-moss">Ngurah Rai (DPS)</dd></div>
+  </dl>
+  <p class="mt-6 text-sm text-muted">Higher areas such as Kintamani are 8–10 °C cooler than the coast, especially at sunrise.</p>
+</section>
+<!-- /component:at-a-glance -->
+
+<!-- component:things-to-do -->
+<section data-component="things-to-do" id="things-to-do" class="scroll-mt-32 border-t border-moss/15">
+  <div class="mx-auto max-w-6xl px-5 py-20">
+    <p class="eyebrow">Things to do</p>
+    <h2 class="max-w-2xl text-4xl font-semibold text-moss sm:text-5xl">Places worth the drive.</h2>
+    <ul class="mt-12 grid gap-x-8 gap-y-10 md:grid-cols-2" data-repeat="things_to_do">
+      <li class="grid grid-cols-[7rem_1fr] gap-5" data-repeat-item>
+        <div class="photo-slot aspect-square rounded-xl text-xs" data-field="things_to_do.0.photo">[FOTO]</div>
+        <div><h3 class="text-2xl font-semibold text-moss" data-field="things_to_do.0.title">Tegallalang rice terraces</h3><p class="mt-1 text-ink/75" data-field="things_to_do.0.text">Go before 08.00 for empty paths. Walk down into the paddies, not only the top platform.</p></div>
+      </li>
+      <li class="grid grid-cols-[7rem_1fr] gap-5" data-repeat-clone>
+        <div class="photo-slot aspect-square rounded-xl text-xs">[FOTO]</div>
+        <div><h3 class="text-2xl font-semibold text-moss">Tirta Empul</h3><p class="mt-1 text-ink/75">A spring temple where Balinese families come to purify. Sarong required, bring a change of clothes.</p></div>
+      </li>
+      <li class="grid grid-cols-[7rem_1fr] gap-5" data-repeat-clone>
+        <div class="photo-slot aspect-square rounded-xl text-xs">[FOTO]</div>
+        <div><h3 class="text-2xl font-semibold text-moss">Mount Batur at sunrise</h3><p class="mt-1 text-ink/75">Drive to the Kintamani rim, or hike the volcano with a local guide. Cold at the top: bring a layer.</p></div>
+      </li>
+      <li class="grid grid-cols-[7rem_1fr] gap-5" data-repeat-clone>
+        <div class="photo-slot aspect-square rounded-xl text-xs">[FOTO]</div>
+        <div><h3 class="text-2xl font-semibold text-moss">Uluwatu temple and kecak</h3><p class="mt-1 text-ink/75">Cliff temple at sunset. Keep sunglasses and phones away from the monkeys.</p></div>
+      </li>
+      <li class="grid grid-cols-[7rem_1fr] gap-5" data-repeat-clone>
+        <div class="photo-slot aspect-square rounded-xl text-xs">[FOTO]</div>
+        <div><h3 class="text-2xl font-semibold text-moss">Sidemen valley</h3><p class="mt-1 text-ink/75">Quiet terraces and weaving workshops, about 1,5 hours from Ubud. Good for a slow day.</p></div>
+      </li>
+      <li class="grid grid-cols-[7rem_1fr] gap-5" data-repeat-clone>
+        <div class="photo-slot aspect-square rounded-xl text-xs">[FOTO]</div>
+        <div><h3 class="text-2xl font-semibold text-moss">Nusa Penida day trip</h3><p class="mt-1 text-ink/75">I drive you to the Sanur harbour and wait for your return boat. The island roads need a local driver there.</p></div>
+      </li>
+    </ul>
+  </div>
+</section>
+<!-- /component:things-to-do -->
+
+<!-- component:food-guide -->
+<section data-component="food-guide" id="food" class="scroll-mt-32 bg-moss text-paper">
+  <div class="mx-auto grid max-w-6xl gap-12 px-5 py-20 md:grid-cols-12">
+    <div class="md:col-span-5">
+      <p class="eyebrow !text-sand">What to eat</p>
+      <h2 class="text-4xl font-semibold sm:text-5xl">Ask me where I eat.</h2>
+      <p class="mt-4 text-paper/80">Warungs (small family restaurants) serve the best Balinese food. Meals cost IDR 25.000–60.000 per person.</p>
+    </div>
+    <ul class="divide-y divide-paper/15 border-y border-paper/15 md:col-span-7" data-repeat="food">
+      <li class="flex flex-col gap-1 py-5 sm:flex-row sm:gap-8"><h3 class="font-display text-2xl sm:w-52 sm:shrink-0" data-field="food.0.name">Babi guling</h3><p class="text-paper/80" data-field="food.0.text">Spit-roasted pork with rice and spiced vegetables. Eat it before noon, it often sells out.</p></li>
+      <li class="flex flex-col gap-1 py-5 sm:flex-row sm:gap-8"><h3 class="font-display text-2xl sm:w-52 sm:shrink-0">Nasi campur</h3><p class="text-paper/80">Rice with small portions of meat, vegetables and sambal. The easiest first order.</p></li>
+      <li class="flex flex-col gap-1 py-5 sm:flex-row sm:gap-8"><h3 class="font-display text-2xl sm:w-52 sm:shrink-0">Bebek betutu</h3><p class="text-paper/80">Slow-cooked duck in spices. Many places need it ordered a day ahead.</p></li>
+      <li class="flex flex-col gap-1 py-5 sm:flex-row sm:gap-8"><h3 class="font-display text-2xl sm:w-52 sm:shrink-0">Sate lilit</h3><p class="text-paper/80">Minced fish or chicken on lemongrass sticks, grilled over coconut husk.</p></li>
+    </ul>
+  </div>
+</section>
+<!-- /component:food-guide -->
+
+<!-- component:packing-list -->
+<section data-component="packing-list" id="pack" class="mx-auto max-w-6xl scroll-mt-32 px-5 py-20">
+  <p class="eyebrow">What to pack</p>
+  <h2 class="max-w-2xl text-4xl font-semibold text-moss sm:text-5xl">Small things that help.</h2>
+  <ul class="mt-12 grid gap-x-10 gap-y-6 md:grid-cols-2" data-repeat="pack">
+    <li class="rule pt-4"><h3 class="text-xl font-semibold" data-field="pack.0.name">Shoulder and knee cover</h3><p class="mt-1 text-ink/75" data-field="pack.0.text">Temples ask for it. A sarong is lent or sold at the gate, but your own is more comfortable.</p></li>
+    <li class="rule pt-4"><h3 class="text-xl font-semibold">A warm layer</h3><p class="mt-1 text-ink/75">Kintamani at 05.00 is about 15 °C. The car's air conditioning is also cold.</p></li>
+    <li class="rule pt-4"><h3 class="text-xl font-semibold">Small rupiah notes</h3><p class="mt-1 text-ink/75">Tickets, parking at viewpoints and warungs often do not accept cards or large notes.</p></li>
+    <li class="rule pt-4"><h3 class="text-xl font-semibold">Rain jacket (November to March)</h3><p class="mt-1 text-ink/75">Showers are short and heavy in the afternoon. Plan indoor stops after 15.00.</p></li>
+    <li class="rule pt-4"><h3 class="text-xl font-semibold">Reef-safe sunscreen</h3><p class="mt-1 text-ink/75">The sun is strong even when it is cloudy. Reapply at the beach and the terraces.</p></li>
+    <li class="rule pt-4"><h3 class="text-xl font-semibold">Closed shoes for walking</h3><p class="mt-1 text-ink/75">Terrace paths and temple steps are uneven and slippery after rain.</p></li>
+  </ul>
+</section>
+<!-- /component:packing-list -->
 
 <!-- component:driver-intro -->
-<section data-component="driver-intro" class="mx-auto grid max-w-6xl gap-12 px-5 py-20 md:grid-cols-12 md:items-center">
-  <div class="md:col-span-5">
-    <div class="photo-slot aspect-[4/5] rounded-[28px] p-6" data-field="driver.photo_about">[FOTO: Wayan, potret setengah badan]</div>
-  </div>
-  <div class="md:col-span-6 md:col-start-7">
-    <p class="eyebrow">Your driver</p>
-    <h2 class="text-4xl font-semibold text-moss sm:text-5xl">Wayan Sudiarta</h2>
-    <p class="mt-5 text-lg leading-relaxed text-ink/80">I started driving for my uncle's guests in 2014. I still take the same back roads to Kintamani because they are quieter before 8 am.</p>
-    <a href="about.html" class="mt-8 inline-flex items-center gap-2 font-semibold text-moss underline decoration-clay decoration-2 underline-offset-8">More about Wayan</a>
+<section data-component="driver-intro" class="bg-sand/60">
+  <div class="mx-auto grid max-w-6xl gap-12 px-5 py-20 md:grid-cols-12 md:items-center">
+    <div class="md:col-span-4">
+      <div class="photo-slot aspect-[4/5] rounded-[28px] p-6" data-field="driver.photo_about">[FOTO: Wayan, potret setengah badan]</div>
+    </div>
+    <div class="md:col-span-7 md:col-start-6">
+      <p class="eyebrow">Your driver</p>
+      <h2 class="text-4xl font-semibold text-moss sm:text-5xl">Wayan Sudiarta</h2>
+      <p class="mt-5 text-lg leading-relaxed text-ink/80">I started driving for my uncle's guests in 2014. I still take the same back roads to Kintamani because they are quieter before 8 am.</p>
+      <a href="about.html" class="mt-8 inline-flex items-center gap-2 font-semibold text-moss underline decoration-clay decoration-2 underline-offset-8">More about Wayan</a>
+    </div>
   </div>
 </section>
 <!-- /component:driver-intro -->
 
-<!-- component:testimonials -->
-<section data-component="testimonials" class="mx-auto max-w-6xl px-5 pb-20">
-  <!-- DUMMY: ganti dengan ulasan asli + sumber. Jangan tampilkan jika belum ada. -->
-  <p class="eyebrow">What guests wrote</p>
-  <div class="mt-10 grid gap-6 md:grid-cols-3" data-repeat="testimonials">
-    <blockquote class="rounded-2xl border border-moss/15 bg-paper p-6" data-repeat-item>
-      <p class="text-lg leading-relaxed" data-field="testimonials.0.text">"He picked us up at 3.30 and we were the first at the rim. Patient with our kids."</p>
-      <footer class="mt-5 text-sm text-muted"><span class="font-semibold text-ink" data-field="testimonials.0.name">Sarah K.</span> · <span data-field="testimonials.0.origin">Melbourne</span> · <span data-field="testimonials.0.date">March 2026</span></footer>
-    </blockquote>
-    <blockquote class="rounded-2xl border border-moss/15 bg-paper p-6" data-repeat-item data-repeat-clone>
-      <p class="text-lg leading-relaxed">"Fixed the route for us when the road was closed. Good advice, no pressure to buy anything."</p>
-      <footer class="mt-5 text-sm text-muted"><span class="font-semibold text-ink">Tomas R.</span> · Berlin · January 2026</footer>
-    </blockquote>
-    <blockquote class="rounded-2xl border border-moss/15 bg-paper p-6" data-repeat-item data-repeat-clone>
-      <p class="text-lg leading-relaxed">"Airport to Ubud in heavy traffic, calm the whole way. The car was spotless."</p>
-      <footer class="mt-5 text-sm text-muted"><span class="font-semibold text-ink">Priya M.</span> · Singapore · November 2025</footer>
-    </blockquote>
-  </div>
-</section>
-<!-- /component:testimonials -->
-
-<!-- component:service-area -->
-<section data-component="service-area" class="border-t border-moss/15">
-  <div class="mx-auto grid max-w-6xl gap-8 px-5 py-16 md:grid-cols-3">
-    <h2 class="text-3xl font-semibold text-moss md:col-span-1">Where we drive</h2>
-    <ul class="grid grid-cols-2 gap-x-8 gap-y-3 text-lg md:col-span-2 md:grid-cols-3" data-repeat="areas">
-      <li>Ubud</li><li>Kintamani</li><li>Seminyak</li><li>Canggu</li><li>Nusa Dua</li><li>Uluwatu</li><li>Sidemen</li><li>Bedugul</li><li>Denpasar airport</li>
-    </ul>
-  </div>
-</section>
-<!-- /component:service-area -->
-
 <!-- component:faq -->
-<section data-component="faq" class="mx-auto max-w-3xl px-5 py-20">
+<section data-component="faq" id="faq" class="mx-auto max-w-3xl scroll-mt-32 px-5 py-20">
   <p class="eyebrow">Questions</p>
   <h2 class="text-4xl font-semibold text-moss sm:text-5xl">Things guests ask first.</h2>
   <div class="mt-10 divide-y divide-moss/15 border-y border-moss/15" data-repeat="faq">
     <details class="group py-5" data-repeat-item>
+      <summary class="flex min-h-[44px] cursor-pointer list-none items-center justify-between gap-4 text-lg font-semibold">When is the best time to visit Bali? <span class="text-clay transition group-open:rotate-45" aria-hidden="true">+</span></summary>
+      <p class="mt-3 max-w-prose text-ink/75">April to October is the dry season, with clearer skies for sunrise trips. November to March is wetter but greener, with fewer crowds at the temples.</p>
+    </details>
+    <details class="group py-5" data-repeat-clone>
       <summary class="flex min-h-[44px] cursor-pointer list-none items-center justify-between gap-4 text-lg font-semibold">What time do you start for Kintamani sunrise? <span class="text-clay transition group-open:rotate-45" aria-hidden="true">+</span></summary>
       <p class="mt-3 max-w-prose text-ink/75">We leave Ubud around 03.30. Pickup from most hotels in Ubud takes about 20 minutes.</p>
     </details>
@@ -309,10 +420,6 @@
     <details class="group py-5" data-repeat-clone>
       <summary class="flex min-h-[44px] cursor-pointer list-none items-center justify-between gap-4 text-lg font-semibold">What if I cancel? <span class="text-clay transition group-open:rotate-45" aria-hidden="true">+</span></summary>
       <p class="mt-3 max-w-prose text-ink/75">Cancel 24 hours before pickup for a full refund. Later cancellations are charged half the day rate.</p>
-    </details>
-    <details class="group py-5" data-repeat-clone>
-      <summary class="flex min-h-[44px] cursor-pointer list-none items-center justify-between gap-4 text-lg font-semibold">Do you speak English? <span class="text-clay transition group-open:rotate-45" aria-hidden="true">+</span></summary>
-      <p class="mt-3 max-w-prose text-ink/75">Yes. Wayan speaks clear English and Bahasa Indonesia, and can explain Balinese customs when you ask.</p>
     </details>
   </div>
 </section>
