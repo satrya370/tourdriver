@@ -1,32 +1,30 @@
 @import "tailwindcss";
 
-/* Token template Batu: poster kontras tinggi, sudut tajam, tipografi besar. */
+/* Token template Batu (arah baru): terang, hangat, foto-first, sudut membulat. */
 @theme {
-  --color-ink: #141414;
-  --color-ash: #2b2a28;
-  --color-bone: #f1efea;
-  --color-stone: #d9d6d0;
-  --color-lava: #e2562b;
-  --color-lava-deep: #c4431c;
-  --color-muted: #6a665f;
-  --font-display: "Archivo", ui-sans-serif, system-ui, sans-serif;
-  --font-body: "Archivo", ui-sans-serif, system-ui, sans-serif;
+  --color-cream: #fbf8f3;
+  --color-sand: #efe7da;
+  --color-teal: #0f4c4a;
+  --color-teal-deep: #0b3a38;
+  --color-sun: #f2a541;
+  --color-ink: #1d2624;
+  --color-muted: #5f6b68;
+  --font-display: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Poppins", ui-sans-serif, system-ui, sans-serif;
 }
 
 @layer base {
   html { scroll-behavior: smooth; }
-  body { @apply bg-bone font-body text-ink antialiased; }
-  h1, h2, h3 { font-family: var(--font-display); font-stretch: 115%; @apply leading-[0.95] font-extrabold tracking-tight uppercase; }
-  :focus-visible { @apply outline-2 outline-offset-2 outline-lava; }
+  body { @apply bg-cream font-body text-ink antialiased; }
+  h1, h2, h3 { @apply font-display font-semibold tracking-tight; }
+  :focus-visible { @apply outline-2 outline-offset-2 outline-teal; }
 }
 
 @layer components {
-  .btn-primary { @apply inline-flex min-h-[48px] items-center justify-center bg-lava px-6 py-3 font-bold tracking-wide text-ink uppercase transition hover:bg-lava-deep; }
-  .btn-ghost { @apply inline-flex min-h-[48px] items-center justify-center border-2 border-ink px-6 py-3 font-bold tracking-wide text-ink uppercase transition hover:bg-ink hover:text-bone; }
-  .btn-ghost-light { @apply inline-flex min-h-[48px] items-center justify-center border-2 border-bone px-6 py-3 font-bold tracking-wide text-bone uppercase transition hover:bg-bone hover:text-ink; }
-  .eyebrow { @apply mb-4 flex items-center gap-3 text-sm font-bold tracking-[0.14em] text-lava uppercase; }
-  .eyebrow::before { content: ""; @apply block h-3 w-3 bg-lava; }
-  .photo-slot { @apply flex items-center justify-center border-2 border-dashed border-ink/30 bg-stone text-center text-sm text-muted; }
+  .btn-primary { @apply inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full bg-sun px-6 py-3 font-semibold text-ink transition hover:brightness-95; }
+  .btn-ghost { @apply inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full border border-teal/30 bg-cream px-6 py-3 font-semibold text-teal transition hover:border-teal; }
+  .eyebrow { @apply mb-3 inline-block rounded-full bg-sand px-3 py-1 text-xs font-semibold tracking-wide text-teal uppercase; }
+  .photo-slot { @apply flex items-center justify-center rounded-3xl bg-sand text-center text-sm text-muted; }
 }
 
 @media (prefers-reduced-motion: reduce) {
