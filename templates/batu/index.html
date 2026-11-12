@@ -60,15 +60,15 @@
 <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-coral focus:px-4 focus:py-2 focus:text-snow">Skip to content</a>
 
 <!-- component:header -->
-<!-- Catatan: halaman Tours/About/Itinerary Batu belum dibuat; nav memakai anchor di halaman ini. -->
 <header data-component="header" class="sticky top-0 z-40 border-b border-ink/10 bg-snow/95 backdrop-blur">
   <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
     <a href="index.html" class="text-lg font-bold" data-field="business.name">Sudiarta <span class="text-coral">Bali Drive</span></a>
     <nav aria-label="Main" class="hidden items-center gap-7 text-sm font-medium md:flex">
-      <a href="#tours" class="hover:text-coral">Tours</a>
+      <a href="activities.html" class="hover:text-coral">Tours</a>
       <a href="#prices" class="hover:text-coral">Prices</a>
       <a href="#reviews" class="hover:text-coral">Reviews</a>
-      <a href="#driver" class="hover:text-coral">About</a>
+      <a href="itinerary.html" class="hover:text-coral">Sample itinerary</a>
+      <a href="about.html" class="hover:text-coral">About</a>
       <a href="#faq" class="hover:text-coral">FAQ</a>
       <a href="https://wa.me/6281200000000?text=Hello%20Wayan%2C%20I%27d%20like%20to%20book%20a%20driver" class="btn-primary !min-h-[42px] !px-5 !py-2" data-field="contact.whatsapp_link">Book on WhatsApp</a>
     </nav>
@@ -79,10 +79,11 @@
   </div>
   <div id="mobile-nav" data-nav-panel hidden class="border-t border-ink/10 px-5 pb-5 md:hidden">
     <nav aria-label="Mobile" class="flex flex-col text-base font-medium">
-      <a href="#tours" class="flex min-h-[48px] items-center border-b border-ink/10">Tours</a>
+      <a href="activities.html" class="flex min-h-[48px] items-center border-b border-ink/10">Tours</a>
       <a href="#prices" class="flex min-h-[48px] items-center border-b border-ink/10">Prices</a>
       <a href="#reviews" class="flex min-h-[48px] items-center border-b border-ink/10">Reviews</a>
-      <a href="#driver" class="flex min-h-[48px] items-center border-b border-ink/10">About</a>
+      <a href="itinerary.html" class="flex min-h-[48px] items-center border-b border-ink/10">Sample itinerary</a>
+      <a href="about.html" class="flex min-h-[48px] items-center border-b border-ink/10">About</a>
       <a href="#faq" class="flex min-h-[48px] items-center">FAQ</a>
     </nav>
   </div>
@@ -153,7 +154,7 @@
 <section data-component="tour-grid" id="tours" class="scroll-mt-20 bg-fog">
   <div class="mx-auto max-w-6xl px-5 py-20">
     <p class="eyebrow">Popular tours</p>
-    <h2 class="max-w-2xl text-3xl sm:text-4xl">Choose your trip.</h2>
+    <div class="flex flex-col justify-between gap-3 md:flex-row md:items-end"><h2 class="max-w-2xl text-3xl sm:text-4xl">Choose your trip.</h2><a href="activities.html" class="font-semibold underline underline-offset-4">See all tours and details</a></div>
     <div class="mt-10 space-y-5" data-repeat="tours">
       <!-- component:tour-card -->
       <article data-component="tour-card" data-repeat-item class="flex flex-col overflow-hidden rounded-2xl bg-snow shadow-sm ring-1 ring-ink/5 md:flex-row">
@@ -269,7 +270,7 @@
       <p class="eyebrow !bg-snow/10 !text-snow">A sample day</p>
       <h2 class="text-3xl sm:text-4xl">Every guest gets a written plan.</h2>
       <p class="mt-4 max-w-md text-snow/75">Times, places and tips for the whole day, shared on WhatsApp before you travel. Here is part of one.</p>
-      <a href="https://wa.me/6281200000000?text=Hello%20Wayan%2C%20can%20I%20see%20a%20sample%20itinerary%3F" class="btn-primary mt-8">Ask for a sample itinerary</a>
+      <a href="itinerary.html" class="btn-primary mt-8">Open the full itinerary</a>
     </div>
     <ol class="space-y-3" data-repeat="day-preview">
       <li class="flex gap-4 rounded-2xl bg-snow/10 p-4"><span class="w-14 shrink-0 font-semibold text-snow">03.30</span><span>Hotel pickup in Ubud</span></li>
@@ -292,7 +293,7 @@
       <h2 class="text-3xl sm:text-4xl">Hi, I am Wayan.</h2>
       <p class="mt-5 text-lg leading-relaxed text-slate" data-field="driver.bio">I started driving for my uncle's guests in 2014. I still take the same back roads to Kintamani because they are quieter before 8 am. Tell me what you like and I will tell you what is worth your time.</p>
       <ul class="mt-6 flex flex-wrap gap-2 text-sm font-medium"><li class="rounded-full bg-snow px-3 py-1.5">11 years driving</li><li class="rounded-full bg-snow px-3 py-1.5">English · Bahasa Indonesia</li><li class="rounded-full bg-snow px-3 py-1.5">SIM A Umum</li><li class="rounded-full bg-snow px-3 py-1.5">Ubud</li></ul>
-      <a href="https://wa.me/6281200000000?text=Hello%20Wayan" class="btn-ink mt-8">Message Wayan</a>
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row"><a href="https://wa.me/6281200000000?text=Hello%20Wayan" class="btn-ink">Message Wayan</a><a href="about.html" class="btn-outline">More about Wayan</a></div>
     </div>
   </div>
 </section>
@@ -410,7 +411,7 @@
     </div>
     <div class="text-sm">
       <p class="font-semibold text-snow">On this page</p>
-      <ul class="mt-2 space-y-1"><li><a href="#tours" class="hover:text-snow">Tours</a></li><li><a href="#prices" class="hover:text-snow">Prices</a></li><li><a href="#reviews" class="hover:text-snow">Reviews</a></li><li><a href="#faq" class="hover:text-snow">FAQ</a></li></ul>
+      <ul class="mt-2 space-y-1"><li><a href="activities.html" class="hover:text-snow">Tours</a></li><li><a href="itinerary.html" class="hover:text-snow">Sample itinerary</a></li><li><a href="about.html" class="hover:text-snow">About</a></li><li><a href="#prices" class="hover:text-snow">Prices</a></li><li><a href="#reviews" class="hover:text-snow">Reviews</a></li><li><a href="#faq" class="hover:text-snow">FAQ</a></li></ul>
     </div>
   </div>
   <div class="border-t border-snow/15">
