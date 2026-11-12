@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@source "../index.html";
+@source "../assets/site.js";
+
+@theme {
+  --color-ink: #172a36;
+  --color-muted: #52636c;
+  --color-paper: #f7f7f2;
+  --color-line: #d9dedb;
+  --color-lime: #e1f28d;
+  --font-sans: "DM Sans", sans-serif;
+  --font-display: "DM Serif Display", Georgia, serif;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; scroll-padding-top: 6rem; }
+  body { @apply bg-paper font-sans text-ink antialiased; }
+  a, button, summary, input, select { @apply focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink; }
+  button, summary { cursor: pointer; }
+  button, a { -webkit-tap-highlight-color: transparent; }
+  ::selection { @apply bg-lime text-ink; }
+}
+
+@layer components {
+  .wrap { @apply mx-auto w-full max-w-[1320px] px-5 sm:px-8 lg:px-12; }
+  .eyebrow { @apply text-[11px] font-bold uppercase tracking-[0.18em]; }
+  .section-title { @apply font-display text-4xl leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl; }
+  .action { @apply inline-flex min-h-12 items-center justify-center gap-5 rounded-full bg-ink px-6 py-3 text-sm font-semibold text-white transition hover:bg-ink/85 active:scale-[0.98]; }
+  .action-light { @apply inline-flex min-h-12 items-center justify-center gap-5 rounded-full bg-lime px-6 py-3 text-sm font-bold text-ink transition hover:bg-white active:scale-[0.98]; }
+  .text-link { @apply inline-flex min-h-11 items-center gap-4 border-b border-current pb-1 text-sm font-semibold transition hover:gap-6; }
+  .rule { @apply border-t border-line; }
+  .photo-slot { @apply flex items-center justify-center border border-dashed border-line bg-[#edf0e9] p-6 text-center text-sm text-muted; }
+  .page-nav { @apply text-xs font-semibold; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; }
+}
