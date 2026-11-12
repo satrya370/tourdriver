@@ -5,9 +5,11 @@
   "description": "Template situs driver Bali (static HTML + Tailwind v4)",
   "scripts": {
     "build:sawah": "tailwindcss -i templates/sawah/src/input.css -o templates/sawah/dist/output.css --minify",
-    "build": "npm run build:sawah && npm run build:batu",
+    "build": "npm run build:sawah && npm run build:batu && npm run build:segara && npm run build:endek",
     "preview": "node preview/serve.mjs",
-    "build:batu": "tailwindcss -i templates/batu/src/input.css -o templates/batu/dist/output.css --minify"
+    "build:batu": "tailwindcss -i templates/batu/src/input.css -o templates/batu/dist/output.css --minify",
+    "build:segara": "tailwindcss -i templates/segara/src/input.css -o templates/segara/dist/output.css --minify",
+    "build:endek": "tailwindcss -i templates/endek/src/input.css -o templates/endek/dist/output.css --minify"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.3.5",

@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+/* Token template Endek: premium chauffeur. Onyx + anggur (wine) + abu mutiara, serif Cormorant. */
+@theme {
+  --color-snow: #ffffff;
+  --color-pearl: #f4f4f6;
+  --color-ink: #17181c;
+  --color-onyx: #0f1013;
+  --color-graphite: #5d6068;
+  --color-wine: #7a1f3d;
+  --color-wine-deep: #5f1730;
+  --color-blush: #f6e8ed;
+  --font-display: "Cormorant Garamond", ui-serif, Georgia, serif;
+  --font-body: "Manrope", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-snow font-body text-ink antialiased; }
+  h1, h2, h3 { @apply font-display font-semibold tracking-tight; }
+  :focus-visible { @apply outline-2 outline-offset-2 outline-wine; }
+}
+
+@layer components {
+  .btn-primary { @apply inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full bg-wine px-7 py-3 font-semibold text-snow transition hover:bg-wine-deep; }
+  .btn-outline { @apply inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full border border-ink/25 px-7 py-3 font-semibold text-ink transition hover:border-ink; }
+  .btn-light { @apply inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full bg-snow px-7 py-3 font-semibold text-wine transition hover:bg-blush; }
+  .eyebrow { @apply mb-4 text-xs font-semibold tracking-[0.22em] text-wine uppercase; }
+  .photo-slot { @apply flex items-center justify-center bg-pearl text-center text-sm text-graphite; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
