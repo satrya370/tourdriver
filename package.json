@@ -1,0 +1,16 @@
+{
+  "name": "driver-sites",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Template situs driver Bali (static HTML + Tailwind v4)",
+  "scripts": {
+    "build:sawah": "tailwindcss -i templates/sawah/src/input.css -o templates/sawah/dist/output.css --minify",
+    "build": "npm run build:sawah",
+    "preview": "node preview/serve.mjs"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.5",
+    "playwright-core": "^1.65.0",
+    "tailwindcss": "^4.3.5"
+  }
+}
