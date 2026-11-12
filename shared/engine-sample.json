@@ -1,0 +1,1258 @@
+{
+  "_note": "Contoh data mengikuti itinerary engine web-2.1.0. Dihasilkan oleh scripts/make-engine-sample.mjs.",
+  "site": {
+    "agencyName": "Sudiarta Bali Drive",
+    "agencyContact": "+62 812-0000-0000 · hello@example.com",
+    "generatedDate": "2026-11-12",
+    "whatsapp": "6281200000000"
+  },
+  "rates": {
+    "half_day": 400000,
+    "full_day": 650000,
+    "overtime": 60000,
+    "airport": 350000
+  },
+  "assets": {
+    "215bb3b9-abcf-4485-a1ef-0fbe75d4daf6": {
+      "file": "../../shared/photos/tour-batur-sunrise.webp",
+      "small": "../../shared/photos/tour-batur-sunrise-800.webp"
+    },
+    "22fd1715-1c69-4b2d-aa06-87ad2b826b62": {
+      "file": "../../shared/photos/tour-terraces.webp",
+      "small": "../../shared/photos/tour-terraces-800.webp"
+    },
+    "818862c0-60ff-44f2-acb1-24c022e660bd": {
+      "file": "../../shared/photos/tour-uluwatu-sunset.webp",
+      "small": "../../shared/photos/tour-uluwatu-sunset-800.webp"
+    },
+    "6e8ff728-56ad-4380-af71-4b919bd8016d": {
+      "file": "../../shared/photos/tour-bedugul-temple.webp",
+      "small": "../../shared/photos/tour-bedugul-temple-800.webp"
+    },
+    "8a549681-fee8-4125-ac99-2bd3745b402e": {
+      "file": "../../shared/photos/hero-terraces-green.webp",
+      "small": "../../shared/photos/hero-terraces-green-800.webp"
+    },
+    "1d9d3427-c0ea-4f33-a55d-be41c5d7a85d": {
+      "file": "../../shared/photos/tour-tanah-lot.webp",
+      "small": "../../shared/photos/tour-tanah-lot-800.webp"
+    }
+  },
+  "itinerary": {
+    "schemaVersion": "web-2.1.0",
+    "guide": {
+      "name": "Wayan Sudiarta",
+      "phone": "+62 812-0000-0000"
+    },
+    "cover": {
+      "assetId": "215bb3b9-abcf-4485-a1ef-0fbe75d4daf6",
+      "credit": {
+        "photographer": "Alexey Komarov",
+        "url": "https://commons.wikimedia.org/wiki/File:Sunrise_on_Mount_Batur_-_panoramio_(4).jpg",
+        "source": "Wikimedia Commons (CC BY 3.0)"
+      }
+    },
+    "summary": "A slow first trip: early starts for the best light, long lunches in between, and the drive back to Ubud before the afternoon traffic.",
+    "days": [
+      {
+        "id": "1900e55c-3ace-49fd-a3f6-a184b66b6e45",
+        "dayNumber": 1,
+        "title": "Kintamani sunrise and the terraces",
+        "location": "Kintamani, Penglipuran, Tegallalang",
+        "photo": {
+          "assetId": "22fd1715-1c69-4b2d-aa06-87ad2b826b62",
+          "credit": {
+            "photographer": "Philip Nalangan",
+            "url": "https://commons.wikimedia.org/wiki/File:Tegallalang_Rice_Terraces_Bali.jpg",
+            "source": "Wikimedia Commons (CC BY 4.0)"
+          }
+        },
+        "activities": [
+          {
+            "id": "b981c0d1-1db5-4f58-a5c7-e93048e12185",
+            "time": "03:30",
+            "durationMinutes": 60,
+            "kind": "transport",
+            "title": "Hotel pickup and drive north",
+            "place": "Ubud",
+            "description": "Wayan collects you at the hotel lobby. The road is empty before 04:00, so you can rest in the car.",
+            "tip": "Bring a warm layer. It is about 15 °C at the rim."
+          },
+          {
+            "id": "aec0f4cd-fadf-4a20-ad84-6fd445b1308e",
+            "time": "05:30",
+            "durationMinutes": 120,
+            "kind": "sightseeing",
+            "title": "Mount Batur at sunrise",
+            "place": "Penelokan viewpoint, Kintamani",
+            "description": "Find a spot on the crater rim before first light. Mount Batur and the lake come into view as the sky turns orange.",
+            "tip": "Arrive before 05:45 for the best spots."
+          },
+          {
+            "id": "561170ce-da2f-4505-ab02-5d9283796cf2",
+            "time": "07:30",
+            "durationMinutes": 60,
+            "kind": "food",
+            "title": "Breakfast at the rim",
+            "place": "Terrace warung, Kintamani",
+            "description": "Coffee, eggs and fried banana at a family warung with a view of the caldera.",
+            "tip": null
+          },
+          {
+            "id": "aa1acf4d-386a-4007-aec2-4ec8483de66a",
+            "time": "09:00",
+            "durationMinutes": 90,
+            "kind": "sightseeing",
+            "title": "Penglipuran bamboo village",
+            "place": "Penglipuran, Bangli",
+            "description": "Walk the main lane of the traditional village and see the matching family compounds. The village ticket is paid on site.",
+            "tip": "Ask before taking photos inside family compounds."
+          },
+          {
+            "id": "d4c4c7e8-35c4-42d9-a5f0-62d99ffdef54",
+            "time": "11:00",
+            "durationMinutes": 75,
+            "kind": "food",
+            "title": "Lunch with a valley view",
+            "place": "Tegallalang",
+            "description": "Lunch at a terrace restaurant above the rice paddies. Lunch is not included in the price.",
+            "tip": null
+          },
+          {
+            "id": "be394a1f-95f0-4b8b-aea5-b435ac64e8e7",
+            "time": "12:30",
+            "durationMinutes": 90,
+            "kind": "sightseeing",
+            "title": "Tegallalang rice terraces",
+            "place": "Tegallalang",
+            "description": "Walk down into the paddies, not only the top platform. Wayan knows the quieter paths.",
+            "tip": "Wear shoes with grip. The steps are uneven."
+          },
+          {
+            "id": "200ec568-7ead-4772-ac57-1b63117d81c8",
+            "time": "14:30",
+            "durationMinutes": 45,
+            "kind": "transport",
+            "title": "Return to Ubud",
+            "place": "Ubud",
+            "description": "Back at your hotel by about 15:15, in time to rest before dinner.",
+            "tip": null
+          }
+        ],
+        "hotel": {
+          "name": "Ubud guest house",
+          "area": "Penestanan, Ubud",
+          "note": "Same hotel for Day 1 and Day 2."
+        },
+        "meals": {
+          "breakfast": true,
+          "lunch": false,
+          "dinner": false
+        },
+        "transferNote": null
+      },
+      {
+        "id": "a7ce8995-0cea-439e-ac14-7c2db43484ff",
+        "dayNumber": 2,
+        "title": "Ubud art and temples",
+        "location": "Ubud, Mas and Tirta Empul",
+        "photo": null,
+        "activities": [
+          {
+            "id": "47a75ed3-2713-4c1f-a2ed-337cf50e938f",
+            "time": "08:00",
+            "durationMinutes": 30,
+            "kind": "transport",
+            "title": "Hotel pickup",
+            "place": "Ubud",
+            "description": "Breakfast at the hotel first, then Wayan collects you.",
+            "tip": null
+          },
+          {
+            "id": "86e97548-42ec-45b5-ad9b-456fcf539150",
+            "time": "09:00",
+            "durationMinutes": 90,
+            "kind": "sightseeing",
+            "title": "Mas woodcarving village",
+            "place": "Mas, Gianyar",
+            "description": "Watch carvers at work in family studios. There is no pressure to buy.",
+            "tip": null
+          },
+          {
+            "id": "fc709bd1-45b2-4fe0-a231-0e5d5c7d9aac",
+            "time": "11:00",
+            "durationMinutes": 90,
+            "kind": "activity",
+            "title": "Tirta Empul spring temple",
+            "place": "Tampaksiring",
+            "description": "Visit the holy spring where Balinese families come to purify. You can join the ritual or simply watch.",
+            "tip": "Sarong required. Bring a change of clothes and go before 11:00 for a quieter pool."
+          },
+          {
+            "id": "fa174ad3-f3cf-4bca-a4a8-d28e188eb705",
+            "time": "13:00",
+            "durationMinutes": 75,
+            "kind": "food",
+            "title": "Lunch in Tampaksiring",
+            "place": "Tampaksiring",
+            "description": "A simple warung lunch. Ask Wayan for his favourite nasi campur.",
+            "tip": null
+          },
+          {
+            "id": "215aad0b-039d-466c-a5d3-880ffc9365da",
+            "time": "14:30",
+            "durationMinutes": 75,
+            "kind": "sightseeing",
+            "title": "Goa Gajah",
+            "place": "Bedulu, Gianyar",
+            "description": "A rock-cut temple cave and bathing pools from the 11th century, on the way back.",
+            "tip": null
+          },
+          {
+            "id": "93536857-4695-405d-ab4f-1a94429633e3",
+            "time": "16:00",
+            "durationMinutes": 60,
+            "kind": "free",
+            "title": "Free time in Ubud town",
+            "place": "Ubud centre",
+            "description": "Wayan drops you in the centre for shops and cafes and picks you up again at 17:00.",
+            "tip": null
+          },
+          {
+            "id": "c2d44722-cecd-4814-a2ce-3e5e84d0ffae",
+            "time": "17:00",
+            "durationMinutes": 30,
+            "kind": "transport",
+            "title": "Return to the hotel",
+            "place": "Ubud",
+            "description": "Back at your hotel by about 17:30.",
+            "tip": null
+          }
+        ],
+        "hotel": {
+          "name": "Ubud guest house",
+          "area": "Penestanan, Ubud",
+          "note": null
+        },
+        "meals": {
+          "breakfast": true,
+          "lunch": false,
+          "dinner": false
+        },
+        "transferNote": null
+      },
+      {
+        "id": "6533ce31-00f2-436d-a34c-6a614d8d0c5b",
+        "dayNumber": 3,
+        "title": "South coast and sunset",
+        "location": "Nusa Dua and Uluwatu",
+        "photo": {
+          "assetId": "818862c0-60ff-44f2-acb1-24c022e660bd",
+          "credit": {
+            "photographer": "CEphoto, Uwe Aranas",
+            "url": "https://commons.wikimedia.org/wiki/File:Kuta_Bali_Indonesia_Pura-Luhur-Uluwatu-04.jpg",
+            "source": "Wikimedia Commons (CC BY-SA 3.0)"
+          }
+        },
+        "activities": [
+          {
+            "id": "14daf634-abc7-46b1-ad6b-6c5ddee54f8d",
+            "time": "13:30",
+            "durationMinutes": 90,
+            "kind": "transport",
+            "title": "Drive to the south coast",
+            "place": "Ubud to Nusa Dua",
+            "description": "A relaxed drive south, with a stop for coffee if you like.",
+            "tip": null
+          },
+          {
+            "id": "0ca26b53-4b76-4f45-ac8a-d3c1a164d2a0",
+            "time": "15:00",
+            "durationMinutes": 120,
+            "kind": "free",
+            "title": "Beach time at Nusa Dua",
+            "place": "Nusa Dua",
+            "description": "Two hours on the beach. The car waits in the paid parking lot.",
+            "tip": "Reef-safe sunscreen and a hat help in the afternoon sun."
+          },
+          {
+            "id": "897526f4-cf8b-46b8-ad72-f50439862182",
+            "time": "17:00",
+            "durationMinutes": 90,
+            "kind": "sightseeing",
+            "title": "Uluwatu temple at golden hour",
+            "place": "Uluwatu",
+            "description": "Walk the cliff path to the sea temple as the light turns gold.",
+            "tip": "Keep sunglasses and phones away from the monkeys."
+          },
+          {
+            "id": "46434c54-0519-4d86-a675-0d347b318f58",
+            "time": "18:30",
+            "durationMinutes": 60,
+            "kind": "activity",
+            "title": "Kecak fire dance",
+            "place": "Uluwatu temple amphitheatre",
+            "description": "A traditional dance performed by dozens of men at sunset. Tickets are bought on site.",
+            "tip": "Wear long trousers or a sarong."
+          },
+          {
+            "id": "f4d34c17-4369-4949-aab2-338215ae2939",
+            "time": "19:30",
+            "durationMinutes": 90,
+            "kind": "transport",
+            "title": "Drive back to Ubud",
+            "place": "Uluwatu to Ubud",
+            "description": "Traffic from Uluwatu can take 60 minutes after the show. Back at your hotel around 21:00.",
+            "tip": null
+          }
+        ],
+        "hotel": null,
+        "meals": {
+          "breakfast": false,
+          "lunch": false,
+          "dinner": false
+        },
+        "transferNote": "Check-out day: if you leave Bali the next morning, Wayan can drive you to the airport (IDR 350.000 from Ubud)."
+      }
+    ],
+    "places": [],
+    "included": [
+      "Private car and driver for three days",
+      "Petrol and parking",
+      "Bottled water in the car",
+      "English and Bahasa Indonesia speaking driver",
+      "Hotel pickup and drop-off in Ubud"
+    ],
+    "notIncluded": [
+      "Entrance tickets and the kecak dance ticket",
+      "Meals and drinks",
+      "Hotel accommodation",
+      "Tip for the driver (optional)"
+    ],
+    "notSuitableFor": [
+      "Guests who cannot be ready at 03:00 on Day 1",
+      "Travellers with limited mobility on the Tegallalang steps"
+    ],
+    "notAllowed": [
+      "Smoking in the car",
+      "Durian in the car",
+      "Entering temples without a sarong and sash"
+    ],
+    "whatToBring": [
+      "A warm layer for the Kintamani sunrise",
+      "Comfortable walking shoes",
+      "Sarong and sash (or rent at the temple)",
+      "Small IDR notes for tickets and parking",
+      "Reef-safe sunscreen and a hat"
+    ],
+    "localTips": [
+      "Leave early. Roads in Bali are quieter before 08:00.",
+      "Small IDR notes are easier than cards at warungs and ticket booths.",
+      "Carry a rain jacket from November to March.",
+      "Temples can close for ceremonies. Wayan checks the dates in advance."
+    ],
+    "emergencyContacts": [
+      {
+        "label": "Wayan Sudiarta (driver)",
+        "value": "+62 812-0000-0000"
+      },
+      {
+        "label": "National emergency",
+        "value": "112"
+      },
+      {
+        "label": "Police",
+        "value": "110"
+      },
+      {
+        "label": "Ambulance",
+        "value": "118"
+      }
+    ],
+    "policies": "Cancellation: free up to 24 hours before pickup. Later cancellations are charged half the day rate.\nOvertime: IDR 60.000 per extra hour.\nPayment: bank transfer or cash in IDR at the end of each day.\nChildren: a child seat is available free of charge on request.",
+    "closingNote": "Thank you for travelling with Sudiarta Bali Drive. Message Wayan on WhatsApp any time if your plans change.",
+    "disclaimer": "Times and prices can change with traffic, weather and temple opening hours.",
+    "trip": {
+      "mode": "multi_day",
+      "title": "Three days in Bali: the volcano, Ubud and the south coast",
+      "destination": "Bali",
+      "country": "Indonesia",
+      "region": "Kintamani, Ubud and Uluwatu",
+      "language": "en",
+      "colorTheme": "mixed",
+      "startDate": "2027-03-12",
+      "startTime": null,
+      "endTime": null
+    },
+    "meeting": {
+      "place": "Hotel lobby, Ubud",
+      "mapsUrl": "https://maps.google.com/?q=Ubud+Bali",
+      "time": "03:30",
+      "note": "Wayan waits at the entrance with a name card. Day 2 pickup is at 08:00 and Day 3 pickup at 13:30, at the same spot."
+    },
+    "pickup": {
+      "offered": true,
+      "area": "Hotels in Ubud and Penestanan",
+      "time": "03:30",
+      "dropoffNote": "Dropped at your hotel after each day. Day 3 ends around 21:00."
+    }
+  },
+  "tours": [
+    {
+      "schemaVersion": "web-2.1.0",
+      "guide": {
+        "name": "Wayan Sudiarta",
+        "phone": "+62 812-0000-0000"
+      },
+      "cover": {
+        "assetId": "215bb3b9-abcf-4485-a1ef-0fbe75d4daf6",
+        "credit": {
+          "photographer": "Alexey Komarov",
+          "url": "https://commons.wikimedia.org/wiki/File:Sunrise_on_Mount_Batur_-_panoramio_(4).jpg",
+          "source": "Wikimedia Commons (CC BY 3.0)"
+        }
+      },
+      "summary": "Drive up before dawn to the volcano rim. Coffee at the viewpoint, then the slow road back through villages.",
+      "days": [
+        {
+          "id": "fd782389-149c-43b2-aff1-8fe1b56bd2ae",
+          "dayNumber": 1,
+          "title": "Sunrise at the volcano rim",
+          "location": "Kintamani and Penglipuran",
+          "photo": {
+            "assetId": "215bb3b9-abcf-4485-a1ef-0fbe75d4daf6",
+            "credit": {
+              "photographer": "Alexey Komarov",
+              "url": "https://commons.wikimedia.org/wiki/File:Sunrise_on_Mount_Batur_-_panoramio_(4).jpg",
+              "source": "Wikimedia Commons (CC BY 3.0)"
+            }
+          },
+          "activities": [
+            {
+              "id": "46ebc96c-f270-42f3-a3ab-a9e0c267f8d6",
+              "time": "03:30",
+              "durationMinutes": 105,
+              "kind": "transport",
+              "title": "Hotel pickup and drive north",
+              "place": "Ubud",
+              "description": "The road is empty before 04:00. Rest in the car.",
+              "tip": "Bring a warm layer. It is about 15 °C at the rim."
+            },
+            {
+              "id": "94e564ef-fec3-43fa-af05-9a678a459237",
+              "time": "05:15",
+              "durationMinutes": 105,
+              "kind": "sightseeing",
+              "title": "Mount Batur at sunrise",
+              "place": "Penelokan viewpoint",
+              "description": "Mount Batur and the crater lake at first light.",
+              "tip": "Arrive before 05:45 for the best spots."
+            },
+            {
+              "id": "41c4e3e0-efb6-43ed-aee1-43b82a4513ec",
+              "time": "07:00",
+              "durationMinutes": 60,
+              "kind": "food",
+              "title": "Breakfast at the rim",
+              "place": "Terrace warung",
+              "description": "Coffee, eggs and fried banana with the view.",
+              "tip": null
+            },
+            {
+              "id": "cbf18eb2-135a-46b1-a2d0-da1b21fd52d5",
+              "time": "08:00",
+              "durationMinutes": 90,
+              "kind": "sightseeing",
+              "title": "Penglipuran bamboo village",
+              "place": "Penglipuran, Bangli",
+              "description": "Bamboo forest and traditional houses. The village ticket is paid on site.",
+              "tip": null
+            }
+          ],
+          "hotel": null,
+          "meals": null,
+          "transferNote": null
+        }
+      ],
+      "places": [],
+      "included": [
+        "Private car and driver",
+        "Petrol and parking",
+        "Bottled water",
+        "English and Bahasa Indonesia speaking driver"
+      ],
+      "notIncluded": [
+        "Entrance tickets",
+        "Meals and drinks",
+        "Tip for the driver (optional)"
+      ],
+      "notSuitableFor": [],
+      "notAllowed": [],
+      "whatToBring": [
+        "Sarong and sash (or rent at the temple)",
+        "Small IDR notes for tickets and parking"
+      ],
+      "localTips": [
+        "Dress in layers. The rim is cold before 06:00."
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Wayan Sudiarta (driver)",
+          "value": "+62 812-0000-0000"
+        },
+        {
+          "label": "National emergency",
+          "value": "112"
+        },
+        {
+          "label": "Police",
+          "value": "110"
+        },
+        {
+          "label": "Ambulance",
+          "value": "118"
+        }
+      ],
+      "policies": "Cancellation: free up to 24 hours before pickup. Later cancellations are charged half the day rate.\nOvertime: IDR 60.000 per extra hour.\nPayment: bank transfer or cash in IDR at the end of each day.\nChildren: a child seat is available free of charge on request.",
+      "closingNote": null,
+      "disclaimer": "Times can change with traffic, weather and temple opening hours.",
+      "slug": "kintamani-sunrise",
+      "price": 750000,
+      "trip": {
+        "mode": "half_day",
+        "title": "Kintamani Sunrise",
+        "destination": "Kintamani",
+        "country": "Indonesia",
+        "region": "Bangli, Central Bali",
+        "language": "en",
+        "colorTheme": "mountain",
+        "startDate": null,
+        "startTime": "03:30",
+        "endTime": "09:30"
+      },
+      "meeting": {
+        "place": "Your hotel lobby",
+        "mapsUrl": "https://maps.google.com/?q=Ubud+Bali",
+        "time": "03:30",
+        "note": "Wayan waits at the entrance with a name card."
+      },
+      "pickup": {
+        "offered": true,
+        "area": "Hotels in Ubud and nearby",
+        "time": "03:30",
+        "dropoffNote": "Back at your hotel by about 10:30."
+      }
+    },
+    {
+      "schemaVersion": "web-2.1.0",
+      "guide": {
+        "name": "Wayan Sudiarta",
+        "phone": "+62 812-0000-0000"
+      },
+      "cover": {
+        "assetId": "22fd1715-1c69-4b2d-aa06-87ad2b826b62",
+        "credit": {
+          "photographer": "Philip Nalangan",
+          "url": "https://commons.wikimedia.org/wiki/File:Tegallalang_Rice_Terraces_Bali.jpg",
+          "source": "Wikimedia Commons (CC BY 4.0)"
+        }
+      },
+      "summary": "A full day of the Ubud highlands: terraces, craft villages and a spring temple, with a long lunch in between.",
+      "days": [
+        {
+          "id": "f2ea50ae-936e-4bd8-af29-e0457d7644cd",
+          "dayNumber": 1,
+          "title": "Terraces, craft and temples",
+          "location": "Tegallalang, Mas, Tirta Empul",
+          "photo": {
+            "assetId": "22fd1715-1c69-4b2d-aa06-87ad2b826b62",
+            "credit": {
+              "photographer": "Philip Nalangan",
+              "url": "https://commons.wikimedia.org/wiki/File:Tegallalang_Rice_Terraces_Bali.jpg",
+              "source": "Wikimedia Commons (CC BY 4.0)"
+            }
+          },
+          "activities": [
+            {
+              "id": "35b4f4fb-3eaf-4f2e-a14b-db4a50b1e261",
+              "time": "08:00",
+              "durationMinutes": 45,
+              "kind": "transport",
+              "title": "Hotel pickup",
+              "place": "Ubud",
+              "description": "Wayan collects you after breakfast.",
+              "tip": null
+            },
+            {
+              "id": "2dbec70e-de4e-48e8-a9b8-8f44e4af5bb6",
+              "time": "08:45",
+              "durationMinutes": 90,
+              "kind": "sightseeing",
+              "title": "Tegallalang rice terraces",
+              "place": "Tegallalang",
+              "description": "Arrive before 09:00 for empty paths. Walk down into the paddies.",
+              "tip": "Wear shoes with grip."
+            },
+            {
+              "id": "34ca4bc7-c616-4141-a764-a44aefeb11bd",
+              "time": "10:30",
+              "durationMinutes": 60,
+              "kind": "sightseeing",
+              "title": "Mas woodcarving village",
+              "place": "Mas, Gianyar",
+              "description": "Watch carvers work. There is no pressure to buy.",
+              "tip": null
+            },
+            {
+              "id": "3862e47c-8e92-4158-a552-31665ef2d17e",
+              "time": "12:00",
+              "durationMinutes": 90,
+              "kind": "activity",
+              "title": "Tirta Empul spring temple",
+              "place": "Tampaksiring",
+              "description": "Join the purification ritual or watch from the side.",
+              "tip": "Sarong required. Bring a change of clothes."
+            },
+            {
+              "id": "e8975114-6904-49ec-a363-124b113e4d38",
+              "time": "13:45",
+              "durationMinutes": 75,
+              "kind": "food",
+              "title": "Lunch with a valley view",
+              "place": "Tampaksiring",
+              "description": "A warung lunch. Lunch is not included.",
+              "tip": null
+            },
+            {
+              "id": "a97a15a6-d6e4-4ae9-abc1-9c28aab4efa9",
+              "time": "15:15",
+              "durationMinutes": 75,
+              "kind": "sightseeing",
+              "title": "Goa Gajah",
+              "place": "Bedulu",
+              "description": "A rock-cut temple cave and bathing pools.",
+              "tip": null
+            },
+            {
+              "id": "e3903017-14aa-4e8a-a827-2dd57bb45537",
+              "time": "16:45",
+              "durationMinutes": 45,
+              "kind": "transport",
+              "title": "Return to Ubud",
+              "place": "Ubud",
+              "description": "Back at your hotel by about 17:30.",
+              "tip": null
+            }
+          ],
+          "hotel": null,
+          "meals": null,
+          "transferNote": null
+        }
+      ],
+      "places": [],
+      "included": [
+        "Private car and driver",
+        "Petrol and parking",
+        "Bottled water",
+        "English and Bahasa Indonesia speaking driver"
+      ],
+      "notIncluded": [
+        "Entrance tickets",
+        "Meals and drinks",
+        "Tip for the driver (optional)"
+      ],
+      "notSuitableFor": [],
+      "notAllowed": [],
+      "whatToBring": [
+        "Sarong and sash (or rent at the temple)",
+        "Small IDR notes for tickets and parking"
+      ],
+      "localTips": [
+        "Go to Tegallalang first. The paths are empty before 09:00."
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Wayan Sudiarta (driver)",
+          "value": "+62 812-0000-0000"
+        },
+        {
+          "label": "National emergency",
+          "value": "112"
+        },
+        {
+          "label": "Police",
+          "value": "110"
+        },
+        {
+          "label": "Ambulance",
+          "value": "118"
+        }
+      ],
+      "policies": "Cancellation: free up to 24 hours before pickup. Later cancellations are charged half the day rate.\nOvertime: IDR 60.000 per extra hour.\nPayment: bank transfer or cash in IDR at the end of each day.\nChildren: a child seat is available free of charge on request.",
+      "closingNote": null,
+      "disclaimer": "Times can change with traffic, weather and temple opening hours.",
+      "slug": "ubud-terraces-and-villages",
+      "price": 650000,
+      "trip": {
+        "mode": "full_day",
+        "title": "Ubud Terraces and Villages",
+        "destination": "Ubud",
+        "country": "Indonesia",
+        "region": "Gianyar, Central Bali",
+        "language": "en",
+        "colorTheme": "nature",
+        "startDate": null,
+        "startTime": "08:00",
+        "endTime": "17:30"
+      },
+      "meeting": {
+        "place": "Your hotel lobby",
+        "mapsUrl": "https://maps.google.com/?q=Ubud+Bali",
+        "time": "08:00",
+        "note": "Wayan waits at the entrance with a name card."
+      },
+      "pickup": {
+        "offered": true,
+        "area": "Hotels in Ubud and nearby",
+        "time": "08:00",
+        "dropoffNote": "Back at your hotel by about 17:30."
+      }
+    },
+    {
+      "schemaVersion": "web-2.1.0",
+      "guide": {
+        "name": "Wayan Sudiarta",
+        "phone": "+62 812-0000-0000"
+      },
+      "cover": {
+        "assetId": "818862c0-60ff-44f2-acb1-24c022e660bd",
+        "credit": {
+          "photographer": "CEphoto, Uwe Aranas",
+          "url": "https://commons.wikimedia.org/wiki/File:Kuta_Bali_Indonesia_Pura-Luhur-Uluwatu-04.jpg",
+          "source": "Wikimedia Commons (CC BY-SA 3.0)"
+        }
+      },
+      "summary": "The cliff temple at golden hour, then the kecak fire dance. Drop-off at your hotel in the evening.",
+      "days": [
+        {
+          "id": "3acb6cfb-f394-4f56-a087-bcbecd1ef16d",
+          "dayNumber": 1,
+          "title": "Cliff temple and kecak",
+          "location": "Uluwatu",
+          "photo": {
+            "assetId": "818862c0-60ff-44f2-acb1-24c022e660bd",
+            "credit": {
+              "photographer": "CEphoto, Uwe Aranas",
+              "url": "https://commons.wikimedia.org/wiki/File:Kuta_Bali_Indonesia_Pura-Luhur-Uluwatu-04.jpg",
+              "source": "Wikimedia Commons (CC BY-SA 3.0)"
+            }
+          },
+          "activities": [
+            {
+              "id": "cb13445e-f217-4df5-a9cc-c061d498a4c5",
+              "time": "15:00",
+              "durationMinutes": 75,
+              "kind": "transport",
+              "title": "Hotel pickup and drive south",
+              "place": "Ubud to Uluwatu",
+              "description": "Leave early to beat the afternoon traffic.",
+              "tip": null
+            },
+            {
+              "id": "41e39f89-b3a0-45f0-a3d1-12087ca83986",
+              "time": "16:15",
+              "durationMinutes": 105,
+              "kind": "sightseeing",
+              "title": "Uluwatu temple",
+              "place": "Uluwatu",
+              "description": "Walk the cliff path as the light turns gold.",
+              "tip": "Keep sunglasses and phones away from the monkeys."
+            },
+            {
+              "id": "9d6de8cd-a09c-4b3a-adbd-21d549f7c222",
+              "time": "18:00",
+              "durationMinutes": 60,
+              "kind": "activity",
+              "title": "Kecak fire dance",
+              "place": "Uluwatu temple amphitheatre",
+              "description": "Tickets are bought on site. The dance starts at sunset.",
+              "tip": "Wear long trousers or a sarong."
+            },
+            {
+              "id": "b66c11d3-95f0-46ff-a928-83e12ba0d10f",
+              "time": "19:00",
+              "durationMinutes": 60,
+              "kind": "food",
+              "title": "Dinner near the temple (optional)",
+              "place": "Uluwatu",
+              "description": "Dinner is on your own. Wayan can suggest places that are quick before the drive back.",
+              "tip": null
+            }
+          ],
+          "hotel": null,
+          "meals": null,
+          "transferNote": null
+        }
+      ],
+      "places": [],
+      "included": [
+        "Private car and driver",
+        "Petrol and parking",
+        "Bottled water",
+        "English and Bahasa Indonesia speaking driver"
+      ],
+      "notIncluded": [
+        "Entrance tickets",
+        "Meals and drinks",
+        "Tip for the driver (optional)"
+      ],
+      "notSuitableFor": [],
+      "notAllowed": [],
+      "whatToBring": [
+        "Sarong and sash (or rent at the temple)",
+        "Small IDR notes for tickets and parking"
+      ],
+      "localTips": [
+        "Traffic from Uluwatu can take 60 minutes after the show."
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Wayan Sudiarta (driver)",
+          "value": "+62 812-0000-0000"
+        },
+        {
+          "label": "National emergency",
+          "value": "112"
+        },
+        {
+          "label": "Police",
+          "value": "110"
+        },
+        {
+          "label": "Ambulance",
+          "value": "118"
+        }
+      ],
+      "policies": "Cancellation: free up to 24 hours before pickup. Later cancellations are charged half the day rate.\nOvertime: IDR 60.000 per extra hour.\nPayment: bank transfer or cash in IDR at the end of each day.\nChildren: a child seat is available free of charge on request.",
+      "closingNote": null,
+      "disclaimer": "Times can change with traffic, weather and temple opening hours.",
+      "slug": "uluwatu-sunset",
+      "price": 400000,
+      "trip": {
+        "mode": "half_day",
+        "title": "Uluwatu Sunset",
+        "destination": "Uluwatu",
+        "country": "Indonesia",
+        "region": "Badung, South Bali",
+        "language": "en",
+        "colorTheme": "beach",
+        "startDate": null,
+        "startTime": "15:00",
+        "endTime": "20:00"
+      },
+      "meeting": {
+        "place": "Your hotel lobby",
+        "mapsUrl": "https://maps.google.com/?q=Ubud+Bali",
+        "time": "15:00",
+        "note": "Wayan waits at the entrance with a name card."
+      },
+      "pickup": {
+        "offered": true,
+        "area": "Hotels in Ubud and nearby",
+        "time": "15:00",
+        "dropoffNote": "Back at your hotel by about 21:30."
+      }
+    },
+    {
+      "schemaVersion": "web-2.1.0",
+      "guide": {
+        "name": "Wayan Sudiarta",
+        "phone": "+62 812-0000-0000"
+      },
+      "cover": {
+        "assetId": "6e8ff728-56ad-4380-af71-4b919bd8016d",
+        "credit": {
+          "photographer": "Ananta Chandra Priambodo",
+          "url": "https://commons.wikimedia.org/wiki/File:Pura_Ulun_Danu_Beratan_Bedugul_Bali.jpg",
+          "source": "Wikimedia Commons (CC BY-SA 4.0)"
+        }
+      },
+      "summary": "The lake temple in the cool highlands in the morning, the sea temple at sunset.",
+      "days": [
+        {
+          "id": "29dc7ead-3956-4c8d-a5e2-2f702b8b193c",
+          "dayNumber": 1,
+          "title": "Lake temple and sea temple",
+          "location": "Bedugul and Tanah Lot",
+          "photo": {
+            "assetId": "6e8ff728-56ad-4380-af71-4b919bd8016d",
+            "credit": {
+              "photographer": "Ananta Chandra Priambodo",
+              "url": "https://commons.wikimedia.org/wiki/File:Pura_Ulun_Danu_Beratan_Bedugul_Bali.jpg",
+              "source": "Wikimedia Commons (CC BY-SA 4.0)"
+            }
+          },
+          "activities": [
+            {
+              "id": "81356b31-6554-4797-aabc-bc7dbfe0c4e8",
+              "time": "08:00",
+              "durationMinutes": 105,
+              "kind": "transport",
+              "title": "Hotel pickup and drive to Bedugul",
+              "place": "Ubud to Bedugul",
+              "description": "A scenic drive up to the highland lakes.",
+              "tip": null
+            },
+            {
+              "id": "1925629a-b618-4329-aeb1-2a959454c0da",
+              "time": "09:45",
+              "durationMinutes": 75,
+              "kind": "sightseeing",
+              "title": "Ulun Danu Beratan temple",
+              "place": "Bedugul",
+              "description": "The lake temple. Best before 10:00, before the tour buses arrive.",
+              "tip": null
+            },
+            {
+              "id": "20e8da29-c76d-44dc-ac31-f7069d6e2474",
+              "time": "11:15",
+              "durationMinutes": 75,
+              "kind": "food",
+              "title": "Lunch near the lake",
+              "place": "Bedugul",
+              "description": "Lunch is not included.",
+              "tip": null
+            },
+            {
+              "id": "7300c2e6-4650-4800-a1a5-baa7103fb581",
+              "time": "12:45",
+              "durationMinutes": 75,
+              "kind": "transport",
+              "title": "Drive to the west coast",
+              "place": "Bedugul to Tanah Lot",
+              "description": "Down from the highlands to the coast.",
+              "tip": null
+            },
+            {
+              "id": "4a825347-cdc1-4b96-a656-c59b9adfc04a",
+              "time": "14:00",
+              "durationMinutes": 120,
+              "kind": "free",
+              "title": "Coffee and rest near Tanah Lot",
+              "place": "Tanah Lot area",
+              "description": "Rest before the sunset crowds arrive.",
+              "tip": null
+            },
+            {
+              "id": "d21d1afa-8339-48bb-a3cc-dbf6789a09e9",
+              "time": "16:00",
+              "durationMinutes": 120,
+              "kind": "sightseeing",
+              "title": "Tanah Lot at sunset",
+              "place": "Tanah Lot",
+              "description": "The sea temple on its rock. The temple is reachable at low tide only.",
+              "tip": "Wayan checks the tide for your date."
+            },
+            {
+              "id": "29658387-eb39-428e-ab9b-a4735664e2d9",
+              "time": "18:00",
+              "durationMinutes": 90,
+              "kind": "transport",
+              "title": "Return to Ubud",
+              "place": "Ubud",
+              "description": "Back at your hotel by about 19:30.",
+              "tip": null
+            }
+          ],
+          "hotel": null,
+          "meals": null,
+          "transferNote": null
+        }
+      ],
+      "places": [],
+      "included": [
+        "Private car and driver",
+        "Petrol and parking",
+        "Bottled water",
+        "English and Bahasa Indonesia speaking driver"
+      ],
+      "notIncluded": [
+        "Entrance tickets",
+        "Meals and drinks",
+        "Tip for the driver (optional)"
+      ],
+      "notSuitableFor": [],
+      "notAllowed": [],
+      "whatToBring": [
+        "Sarong and sash (or rent at the temple)",
+        "Small IDR notes for tickets and parking"
+      ],
+      "localTips": [
+        "Bedugul is cool. Bring a light jacket."
+      ],
+      "emergencyContacts": [
+        {
+          "label": "Wayan Sudiarta (driver)",
+          "value": "+62 812-0000-0000"
+        },
+        {
+          "label": "National emergency",
+          "value": "112"
+        },
+        {
+          "label": "Police",
+          "value": "110"
+        },
+        {
+          "label": "Ambulance",
+          "value": "118"
+        }
+      ],
+      "policies": "Cancellation: free up to 24 hours before pickup. Later cancellations are charged half the day rate.\nOvertime: IDR 60.000 per extra hour.\nPayment: bank transfer or cash in IDR at the end of each day.\nChildren: a child seat is available free of charge on request.",
+      "closingNote": null,
+      "disclaimer": "Times can change with traffic, weather and temple opening hours.",
+      "slug": "bedugul-and-tanah-lot",
+      "price": 650000,
+      "trip": {
+        "mode": "full_day",
+        "title": "Bedugul and Tanah Lot",
+        "destination": "Bedugul",
+        "country": "Indonesia",
+        "region": "Tabanan, West Bali",
+        "language": "en",
+        "colorTheme": "cultural",
+        "startDate": null,
+        "startTime": "08:00",
+        "endTime": "19:30"
+      },
+      "meeting": {
+        "place": "Your hotel lobby",
+        "mapsUrl": "https://maps.google.com/?q=Ubud+Bali",
+        "time": "08:00",
+        "note": "Wayan waits at the entrance with a name card."
+      },
+      "pickup": {
+        "offered": true,
+        "area": "Hotels in Ubud and nearby",
+        "time": "08:00",
+        "dropoffNote": "Back at your hotel by about 19:30."
+      }
+    }
+  ],
+  "placesGuide": {
+    "schemaVersion": "web-2.1.0",
+    "guide": {
+      "name": "Wayan Sudiarta",
+      "phone": "+62 812-0000-0000"
+    },
+    "cover": {
+      "assetId": "8a549681-fee8-4125-ac99-2bd3745b402e",
+      "credit": {
+        "photographer": "Vyacheslav Argenberg",
+        "url": "https://commons.wikimedia.org/wiki/File:Rice_terraces,_Ubud,_Bali.jpg",
+        "source": "Wikimedia Commons (CC BY 4.0)"
+      }
+    },
+    "summary": "Seven places Wayan drives guests to most often, with how long to stay, when to go and how to get there.",
+    "days": [],
+    "places": [
+      {
+        "id": "52157074-e6f6-4dbb-ac1e-09555d49bd21",
+        "group": "Ubud and around",
+        "name": "Tegallalang rice terraces",
+        "area": "Tegallalang, Gianyar",
+        "description": "Terraced rice fields on a steep valley wall, with paths down into the paddies.",
+        "tips": [
+          "Arrive before 09:00 for empty paths.",
+          "Wear shoes with grip."
+        ],
+        "gettingThere": "About 25 minutes by car from Ubud centre.",
+        "suggestedDuration": "1 to 1,5 hours",
+        "bestTime": "Early morning, before 09:00",
+        "nearby": "Swing and coffee plantations along the same road",
+        "photo": {
+          "assetId": "22fd1715-1c69-4b2d-aa06-87ad2b826b62",
+          "credit": {
+            "photographer": "Philip Nalangan",
+            "url": "https://commons.wikimedia.org/wiki/File:Tegallalang_Rice_Terraces_Bali.jpg",
+            "source": "Wikimedia Commons (CC BY 4.0)"
+          }
+        }
+      },
+      {
+        "id": "bce63f85-f9c4-45a9-ab26-fcfd658105f0",
+        "group": "Ubud and around",
+        "name": "Tirta Empul",
+        "area": "Tampaksiring, Gianyar",
+        "description": "A holy spring temple where Balinese families come to purify in the pools.",
+        "tips": [
+          "Sarong required, rent one at the gate.",
+          "Bring a change of clothes to join the ritual."
+        ],
+        "gettingThere": "About 40 minutes by car from Ubud.",
+        "suggestedDuration": "1,5 hours",
+        "bestTime": "Before 11:00",
+        "nearby": "Gunung Kawi, Tampaksiring palace",
+        "photo": null
+      },
+      {
+        "id": "7a5083b3-b8c6-417c-a018-6c78937f362d",
+        "group": "Ubud and around",
+        "name": "Goa Gajah",
+        "area": "Bedulu, Gianyar",
+        "description": "A rock-cut temple cave and bathing pools from the 11th century.",
+        "tips": [
+          "Cover shoulders and knees."
+        ],
+        "gettingThere": "About 15 minutes by car from Ubud.",
+        "suggestedDuration": "1 hour",
+        "bestTime": "Afternoon",
+        "nearby": "Yeh Pulu relief",
+        "photo": null
+      },
+      {
+        "id": "8e63e1ce-8ef2-4f19-acbe-95b42315357e",
+        "group": "Highlands and volcano",
+        "name": "Mount Batur and the Kintamani rim",
+        "area": "Kintamani, Bangli",
+        "description": "A volcano and crater lake seen from the rim road. Sunrise is the main reason to go.",
+        "tips": [
+          "Dress in layers. It is about 15 °C before 06:00.",
+          "Book breakfast with a view at a rim warung."
+        ],
+        "gettingThere": "About 1 hour 15 minutes by car from Ubud.",
+        "suggestedDuration": "3 to 4 hours with breakfast",
+        "bestTime": "Sunrise, April to October",
+        "nearby": "Penglipuran village, Tegenungan",
+        "photo": {
+          "assetId": "215bb3b9-abcf-4485-a1ef-0fbe75d4daf6",
+          "credit": {
+            "photographer": "Alexey Komarov",
+            "url": "https://commons.wikimedia.org/wiki/File:Sunrise_on_Mount_Batur_-_panoramio_(4).jpg",
+            "source": "Wikimedia Commons (CC BY 3.0)"
+          }
+        }
+      },
+      {
+        "id": "aecb0f5f-7915-4f25-a7cc-56b3916106dc",
+        "group": "Highlands and volcano",
+        "name": "Ulun Danu Beratan",
+        "area": "Bedugul, Tabanan",
+        "description": "A temple complex on the shore of a highland lake.",
+        "tips": [
+          "Go before 10:00 to avoid tour buses.",
+          "Bring a light jacket."
+        ],
+        "gettingThere": "About 1 hour 45 minutes by car from Ubud.",
+        "suggestedDuration": "1 to 1,5 hours",
+        "bestTime": "Early morning",
+        "nearby": "Handara gate, Jatiluwih terraces",
+        "photo": {
+          "assetId": "6e8ff728-56ad-4380-af71-4b919bd8016d",
+          "credit": {
+            "photographer": "Ananta Chandra Priambodo",
+            "url": "https://commons.wikimedia.org/wiki/File:Pura_Ulun_Danu_Beratan_Bedugul_Bali.jpg",
+            "source": "Wikimedia Commons (CC BY-SA 4.0)"
+          }
+        }
+      },
+      {
+        "id": "4c8e9310-13a1-4bb7-a2ab-73a0557bbbf2",
+        "group": "Coast",
+        "name": "Uluwatu temple",
+        "area": "Uluwatu, Badung",
+        "description": "A sea temple on a cliff, famous for sunset and the kecak dance.",
+        "tips": [
+          "Keep sunglasses and phones away from the monkeys.",
+          "Wear long trousers or a sarong."
+        ],
+        "gettingThere": "About 1 hour 45 minutes by car from Ubud.",
+        "suggestedDuration": "2 to 3 hours with the dance",
+        "bestTime": "Late afternoon to sunset",
+        "nearby": "Padang Padang, Jimbaran",
+        "photo": {
+          "assetId": "818862c0-60ff-44f2-acb1-24c022e660bd",
+          "credit": {
+            "photographer": "CEphoto, Uwe Aranas",
+            "url": "https://commons.wikimedia.org/wiki/File:Kuta_Bali_Indonesia_Pura-Luhur-Uluwatu-04.jpg",
+            "source": "Wikimedia Commons (CC BY-SA 3.0)"
+          }
+        }
+      },
+      {
+        "id": "5a1109a1-6b5e-44b7-ae85-1bb9b291f54e",
+        "group": "Coast",
+        "name": "Tanah Lot",
+        "area": "Beraban, Tabanan",
+        "description": "A sea temple on a rock, reachable on foot at low tide.",
+        "tips": [
+          "Check the tide before you go.",
+          "Arrive before 16:00 to avoid the sunset crowd."
+        ],
+        "gettingThere": "About 1 hour 15 minutes by car from Ubud.",
+        "suggestedDuration": "1,5 to 2 hours",
+        "bestTime": "Late afternoon",
+        "nearby": "Pererenan beach",
+        "photo": {
+          "assetId": "1d9d3427-c0ea-4f33-a55d-be41c5d7a85d",
+          "credit": {
+            "photographer": "CEphoto, Uwe Aranas",
+            "url": "https://commons.wikimedia.org/wiki/File:Tanah-Lot_Bali_Indonesia_Pura-Tanah-Lot-01.jpg",
+            "source": "Wikimedia Commons (CC BY-SA 3.0)"
+          }
+        }
+      }
+    ],
+    "included": [],
+    "notIncluded": [],
+    "notSuitableFor": [],
+    "notAllowed": [],
+    "whatToBring": [],
+    "localTips": [],
+    "emergencyContacts": [
+      {
+        "label": "Wayan Sudiarta (driver)",
+        "value": "+62 812-0000-0000"
+      },
+      {
+        "label": "National emergency",
+        "value": "112"
+      },
+      {
+        "label": "Police",
+        "value": "110"
+      },
+      {
+        "label": "Ambulance",
+        "value": "118"
+      }
+    ],
+    "policies": null,
+    "closingNote": "Ask Wayan to turn any of these places into a day plan.",
+    "disclaimer": "Travel times are estimates and change with traffic.",
+    "trip": {
+      "mode": "destination_guide",
+      "title": "Places worth the drive around Ubud",
+      "destination": "Bali",
+      "country": "Indonesia",
+      "region": "Central and south Bali",
+      "language": "en",
+      "colorTheme": "mixed",
+      "startDate": null,
+      "startTime": null,
+      "endTime": null
+    },
+    "meeting": {
+      "place": null,
+      "mapsUrl": null,
+      "time": null,
+      "note": null
+    },
+    "pickup": {
+      "offered": false,
+      "area": null,
+      "time": null,
+      "dropoffNote": null
+    }
+  }
+}

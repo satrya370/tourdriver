@@ -29,15 +29,81 @@
         "@type": "ItemList",
         "name": "Private driver tours from Ubud",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "item": { "@type": "TouristTrip", "name": "Kintamani Sunrise", "description": "Early start to the Kintamani volcano rim for sunrise, a coffee stop and Penglipuran village.", "offers": { "@type": "Offer", "price": "750000", "priceCurrency": "IDR" } } },
-          { "@type": "ListItem", "position": 2, "item": { "@type": "TouristTrip", "name": "Ubud Terraces and Villages", "description": "Full-day route through Tegallalang terraces, Mas woodcarving village, Tirta Empul and Goa Gajah.", "offers": { "@type": "Offer", "price": "650000", "priceCurrency": "IDR" } } },
-          { "@type": "ListItem", "position": 3, "item": { "@type": "TouristTrip", "name": "Uluwatu Sunset", "description": "Half-day cliff temple visit ending with sunset and the kecak dance.", "offers": { "@type": "Offer", "price": "400000", "priceCurrency": "IDR" } } },
-          { "@type": "ListItem", "position": 4, "item": { "@type": "TouristTrip", "name": "Bedugul and Tanah Lot", "description": "Lake temple in the highlands, then the sea temple at sunset.", "offers": { "@type": "Offer", "price": "650000", "priceCurrency": "IDR" } } }
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "TouristTrip",
+              "name": "Kintamani Sunrise",
+              "description": "Drive up before dawn to the volcano rim. Coffee at the viewpoint, then the slow road back through villages.",
+              "offers": {
+                "@type": "Offer",
+                "price": "750000",
+                "priceCurrency": "IDR"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "TouristTrip",
+              "name": "Ubud Terraces and Villages",
+              "description": "A full day of the Ubud highlands: terraces, craft villages and a spring temple, with a long lunch in between.",
+              "offers": {
+                "@type": "Offer",
+                "price": "650000",
+                "priceCurrency": "IDR"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "TouristTrip",
+              "name": "Uluwatu Sunset",
+              "description": "The cliff temple at golden hour, then the kecak fire dance. Drop-off at your hotel in the evening.",
+              "offers": {
+                "@type": "Offer",
+                "price": "400000",
+                "priceCurrency": "IDR"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "TouristTrip",
+              "name": "Bedugul and Tanah Lot",
+              "description": "The lake temple in the cool highlands in the morning, the sea temple at sunset.",
+              "offers": {
+                "@type": "Offer",
+                "price": "650000",
+                "priceCurrency": "IDR"
+              }
+            }
+          }
         ]
       },
-      { "@type": "BreadcrumbList", "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.example.com/" },
-        { "@type": "ListItem", "position": 2, "name": "Tours", "item": "https://www.example.com/activities.html" } ] }
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.example.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tours",
+            "item": "https://www.example.com/activities.html"
+          }
+        ]
+      }
     ]
   }
   </script>
@@ -94,112 +160,249 @@
 <!-- /component:page-hero -->
 
 <!-- component:filter-chips -->
-<nav data-component="filter-chips" aria-label="Tour categories" class="border-b border-navy/10 bg-mist">
-  <ul class="mx-auto flex max-w-6xl gap-2 overflow-x-auto px-5 py-3 text-sm font-semibold" data-repeat="categories">
-    <li><a href="#sunrise" class="inline-flex min-h-[44px] items-center whitespace-nowrap rounded-full bg-snow px-5 hover:bg-navy hover:text-snow">Sunrise</a></li>
-    <li><a href="#culture" class="inline-flex min-h-[44px] items-center whitespace-nowrap rounded-full bg-snow px-5 hover:bg-navy hover:text-snow">Culture</a></li>
-    <li><a href="#coast" class="inline-flex min-h-[44px] items-center whitespace-nowrap rounded-full bg-snow px-5 hover:bg-navy hover:text-snow">Coast</a></li>
-    <li><a href="#temples" class="inline-flex min-h-[44px] items-center whitespace-nowrap rounded-full bg-snow px-5 hover:bg-navy hover:text-snow">Temples</a></li>
-    <li><a href="#airport" class="inline-flex min-h-[44px] items-center whitespace-nowrap rounded-full bg-snow px-5 hover:bg-navy hover:text-snow">Airport</a></li>
-    <li><a href="#custom" class="inline-flex min-h-[44px] items-center whitespace-nowrap rounded-full bg-snow px-5 hover:bg-navy hover:text-snow">Custom</a></li>
-  </ul>
-</nav>
+<nav data-component="filter-chips" aria-label="Tour categories" class="border-b border-navy/10 bg-mist"><ul class="mx-auto flex max-w-6xl gap-2 overflow-x-auto px-5 py-3" data-repeat="categories"><li><a href="#sunrise" class="inline-flex min-h-[44px] items-center whitespace-nowrap rounded-full bg-snow px-5 text-sm font-semibold hover:bg-navy hover:text-snow">Sunrise</a></li><li><a href="#culture" class="inline-flex min-h-[44px] items-center whitespace-nowrap rounded-full bg-snow px-5 text-sm font-semibold hover:bg-navy hover:text-snow">Culture</a></li><li><a href="#coast" class="inline-flex min-h-[44px] items-center whitespace-nowrap rounded-full bg-snow px-5 text-sm font-semibold hover:bg-navy hover:text-snow">Coast</a></li><li><a href="#temples" class="inline-flex min-h-[44px] items-center whitespace-nowrap rounded-full bg-snow px-5 text-sm font-semibold hover:bg-navy hover:text-snow">Temples</a></li><li><a href="#places" class="inline-flex min-h-[44px] items-center whitespace-nowrap rounded-full bg-snow px-5 text-sm font-semibold hover:bg-navy hover:text-snow">Places</a></li><li><a href="#airport" class="inline-flex min-h-[44px] items-center whitespace-nowrap rounded-full bg-snow px-5 text-sm font-semibold hover:bg-navy hover:text-snow">Airport</a></li><li><a href="#custom" class="inline-flex min-h-[44px] items-center whitespace-nowrap rounded-full bg-snow px-5 text-sm font-semibold hover:bg-navy hover:text-snow">Custom</a></li></ul></nav>
 <!-- /component:filter-chips -->
 
 <!-- component:tour-grid -->
-<section data-component="tour-grid" class="mx-auto max-w-6xl px-5 py-16">
-  <div class="space-y-16" data-repeat="tours">
-
-    <!-- component:tour-card -->
-    <article data-component="tour-card" data-repeat-item id="sunrise" class="grid scroll-mt-24 gap-8 md:grid-cols-12">
-      <img src="../../shared/photos/tour-batur-sunrise-800.webp" width="800" height="533" loading="lazy" alt="Sunrise over Mount Batur, Kintamani" class="aspect-[4/3] w-full rounded-2xl object-cover md:col-span-5" data-field="tours.0.photo">
-      <div class="md:col-span-7">
-        <p class="text-sm font-semibold tracking-wide text-copper uppercase">Sunrise · 6 hours · pickup 03.30</p>
-        <h2 class="mt-1 text-4xl font-bold text-navy" data-field="tours.0.title">Kintamani Sunrise</h2>
-        <p class="mt-3 text-muted" data-field="tours.0.summary">Drive up before dawn to the volcano rim. Coffee at the viewpoint, then the slow road back through villages. Back in Ubud before lunch.</p>
-        <ol class="mt-5 space-y-2 border-l-2 border-gold pl-5 text-sm" data-repeat="tours.0.stops">
-          <li><span class="font-semibold">Penelokan viewpoint.</span> Mount Batur and the crater lake at first light.</li>
-          <li><span class="font-semibold">Breakfast at the rim.</span> Coffee and eggs at a terrace warung.</li>
-          <li><span class="font-semibold">Penglipuran village.</span> Bamboo forest and traditional houses. Entrance ticket paid on site.</li>
-        </ol>
-        <p class="mt-5 rounded-xl bg-mist px-4 py-3 text-sm"><span class="font-semibold">Tip:</span> bring a warm layer. It is about 15 °C at the rim before 06.00.</p>
-        <div class="mt-6 flex flex-wrap items-center gap-4">
-          <p class="text-sm text-muted">From <span class="font-display text-3xl font-bold text-navy">IDR <span data-field="tours.0.price">750.000</span></span></p>
-          <a href="https://wa.me/6281200000000?text=Hello%20Wayan%2C%20I%27d%20like%20Kintamani%20Sunrise" class="btn-primary">Book on WhatsApp</a>
-          <a href="itinerary.html#day-1" class="font-semibold text-navy underline decoration-gold decoration-2 underline-offset-8">See a sample day</a>
-        </div>
-      </div>
-    </article>
-    <!-- /component:tour-card -->
-
-    <article data-component="tour-card" data-repeat-item data-repeat-clone id="culture" class="grid scroll-mt-24 gap-8 md:grid-cols-12">
-      <img src="../../shared/photos/tour-terraces-800.webp" width="800" height="533" loading="lazy" alt="Rice terraces in Tegallalang" class="aspect-[4/3] w-full rounded-2xl object-cover md:order-2 md:col-span-5">
-      <div class="md:order-1 md:col-span-7">
-        <p class="text-sm font-semibold tracking-wide text-copper uppercase">Culture · 10 hours · pickup 08.00</p>
-        <h2 class="mt-1 text-4xl font-bold text-navy">Ubud Terraces and Villages</h2>
-        <p class="mt-3 text-muted">A full day of the Ubud highlands: terraces, craft villages and a spring temple, with a long lunch in between.</p>
-        <ol class="mt-5 space-y-2 border-l-2 border-gold pl-5 text-sm">
-          <li><span class="font-semibold">Tegallalang rice terraces.</span> Arrive before 09.00 for empty paths.</li>
-          <li><span class="font-semibold">Mas woodcarving village.</span> Watch carvers work. No pressure to buy.</li>
-          <li><span class="font-semibold">Tirta Empul.</span> Sarong required. Bring a change of clothes if you want to join the purification.</li>
-          <li><span class="font-semibold">Lunch with a valley view.</span> Lunch is not included.</li>
-          <li><span class="font-semibold">Goa Gajah.</span> Rock-cut temple cave, on the way back to Ubud.</li>
-        </ol>
-        <div class="mt-6 flex flex-wrap items-center gap-4">
-          <p class="text-sm text-muted">From <span class="font-display text-3xl font-bold text-navy">IDR 650.000</span></p>
-          <a href="https://wa.me/6281200000000?text=Hello%20Wayan%2C%20I%27d%20like%20Ubud%20Terraces" class="btn-primary">Book on WhatsApp</a>
-        </div>
-      </div>
-    </article>
-
-    <article data-component="tour-card" data-repeat-item data-repeat-clone id="coast" class="grid scroll-mt-24 gap-8 md:grid-cols-12">
-      <img src="../../shared/photos/tour-uluwatu-sunset-800.webp" width="800" height="533" loading="lazy" alt="Temple silhouette at sunset in Uluwatu" class="aspect-[4/3] w-full rounded-2xl object-cover md:col-span-5">
-      <div class="md:col-span-7">
-        <p class="text-sm font-semibold tracking-wide text-copper uppercase">Coast · 5 hours · pickup 15.00</p>
-        <h2 class="mt-1 text-4xl font-bold text-navy">Uluwatu Sunset</h2>
-        <p class="mt-3 text-muted">The cliff temple at golden hour, then the kecak fire dance. Drop-off at your hotel in the evening.</p>
-        <ol class="mt-5 space-y-2 border-l-2 border-gold pl-5 text-sm">
-          <li><span class="font-semibold">Uluwatu temple.</span> Keep sunglasses and phones away from the monkeys.</li>
-          <li><span class="font-semibold">Kecak dance.</span> Tickets are bought on site. Wear long trousers.</li>
-        </ol>
-        <p class="mt-5 rounded-xl bg-mist px-4 py-3 text-sm"><span class="font-semibold">Tip:</span> traffic from Uluwatu can take 60 minutes after the show. Plan dinner near the temple.</p>
-        <div class="mt-6 flex flex-wrap items-center gap-4">
-          <p class="text-sm text-muted">From <span class="font-display text-3xl font-bold text-navy">IDR 400.000</span></p>
-          <a href="https://wa.me/6281200000000?text=Hello%20Wayan%2C%20I%27d%20like%20Uluwatu%20Sunset" class="btn-primary">Book on WhatsApp</a>
-        </div>
-      </div>
-    </article>
-
-    <article data-component="tour-card" data-repeat-item data-repeat-clone id="temples" class="grid scroll-mt-24 gap-8 md:grid-cols-12">
-      <img src="../../shared/photos/tour-bedugul-temple-800.webp" width="800" height="533" loading="lazy" alt="Ulun Danu Beratan temple on the lake, Bedugul" class="aspect-[4/3] w-full rounded-2xl object-cover md:order-2 md:col-span-5">
-      <div class="md:order-1 md:col-span-7">
-        <p class="text-sm font-semibold tracking-wide text-copper uppercase">Temples · 10 hours · pickup 08.00</p>
-        <h2 class="mt-1 text-4xl font-bold text-navy">Bedugul and Tanah Lot</h2>
-        <p class="mt-3 text-muted">The lake temple in the cool highlands in the morning, the sea temple at sunset.</p>
-        <ol class="mt-5 space-y-2 border-l-2 border-gold pl-5 text-sm">
-          <li><span class="font-semibold">Ulun Danu Beratan.</span> Best before 10.00, before the tour buses arrive.</li>
-          <li><span class="font-semibold">Lunch near the lake.</span> Lunch is not included.</li>
-          <li><span class="font-semibold">Tanah Lot at sunset.</span> The temple is reachable at low tide only. Wayan checks the tide for your date.</li>
-        </ol>
-        <div class="mt-6 flex flex-wrap items-center gap-4">
-          <p class="text-sm text-muted">From <span class="font-display text-3xl font-bold text-navy">IDR 650.000</span></p>
-          <a href="https://wa.me/6281200000000?text=Hello%20Wayan%2C%20I%27d%20like%20Bedugul%20and%20Tanah%20Lot" class="btn-primary">Book on WhatsApp</a>
-        </div>
-      </div>
-    </article>
-
-    <article data-component="tour-card" data-repeat-item data-repeat-clone id="airport" class="scroll-mt-24 rounded-2xl border border-navy/15 p-8">
-      <p class="text-sm font-semibold tracking-wide text-copper uppercase">Airport · about 1,5 hours</p>
-      <h2 class="mt-1 text-3xl font-bold text-navy">Airport Transfer, Ngurah Rai to Ubud</h2>
-      <p class="mt-3 max-w-2xl text-muted">Wayan waits at arrivals with your name on a card. Up to 4 large bags. Flight delays are not charged. Fixed price, no meter.</p>
+<section data-component="tour-grid" class="mx-auto max-w-6xl px-5 py-16"><div class="space-y-20" data-repeat="tours">
+<article data-component="tour-card" data-repeat-item id="sunrise" class="grid scroll-mt-28 gap-8 md:grid-cols-12" data-slug="kintamani-sunrise">
+    <img src="../../shared/photos/tour-batur-sunrise-800.webp" width="800" height="533" loading="lazy" alt="Kintamani Sunrise" class="aspect-[4/3] w-full rounded-2xl object-cover md:col-span-5 " data-field="cover">
+    <div class="md:col-span-7 ">
+      <p class="flex flex-wrap items-center gap-2"><span class="rounded-full bg-gold px-3 py-1 text-xs font-bold text-navy-deep" data-field="trip.mode">Half day</span><span class="rounded-full bg-mist px-3 py-1 text-sm font-medium">Sunrise</span></p>
+      <h2 class="mt-3 font-display text-3xl font-bold text-navy sm:text-4xl" data-field="trip.title">Kintamani Sunrise</h2>
+      <p class="mt-1 text-sm text-muted" data-field="trip.destination">Kintamani · Bangli, Central Bali · Indonesia</p>
+      <p class="mt-4 text-lg" data-field="summary">Drive up before dawn to the volcano rim. Coffee at the viewpoint, then the slow road back through villages.</p>
+      
+      <div class="mt-5"><dl class="grid gap-x-8 gap-y-5 sm:grid-cols-2"><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Start time</dt><dd class="mt-1 font-medium">03:30–09:30</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Meeting point</dt><dd class="mt-1 font-medium">Your hotel lobby</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Pickup</dt><dd class="mt-1 font-medium">Hotels in Ubud and nearby</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Drop-off note</dt><dd class="mt-1 font-medium">Back at your hotel by about 10:30.</dd></div></dl></div>
       <div class="mt-6 flex flex-wrap items-center gap-4">
-        <p class="text-sm text-muted">Fixed price <span class="font-display text-3xl font-bold text-navy">IDR 350.000</span></p>
-        <a href="https://wa.me/6281200000000?text=Hello%20Wayan%2C%20airport%20transfer" class="btn-primary">Book this transfer</a>
+        <p class="text-sm text-muted">From <span class="font-display text-3xl font-bold text-navy">IDR <span data-field="site.price">750.000</span></span></p>
+        <a href="https://wa.me/6281200000000?text=Hello%20Wayan%2C%20I%20would%20like%20Kintamani%20Sunrise" class="btn-primary">Book on WhatsApp</a>
+        <a href="itinerary.html" class="font-semibold text-navy underline decoration-gold decoration-2 underline-offset-4">See a sample itinerary</a>
       </div>
-    </article>
-  </div>
-</section>
+    </div>
+    <details class="rounded-2xl border border-navy/15 group mt-8 md:col-span-12" open><summary class="flex min-h-[48px] cursor-pointer list-none items-center justify-between gap-4 px-6 font-semibold text-navy">Itinerary: Sunrise at the volcano rim <span class="text-2xl text-copper transition group-open:rotate-45" aria-hidden="true">+</span></summary>
+    <div class="px-6 pb-7" data-section="schedule">
+      <ol class="space-y-8 border-l-2 border-gold pl-7 mt-2" data-repeat="activities"><li class="relative" data-activity-id="46ebc96c-f270-42f3-a3ab-a9e0c267f8d6"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">03:30</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Transport</span><span class="text-muted">1 hr 45 min</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Hotel pickup and drive north</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">The road is empty before 04:00. Rest in the car.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Ubud</p>
+        <p class="mt-3 rounded-lg bg-mist px-3 py-2 text-sm" data-field="activity.tip"><b>Local tip</b> · Bring a warm layer. It is about 15 °C at the rim.</p></li><li class="relative" data-activity-id="94e564ef-fec3-43fa-af05-9a678a459237"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">05:15</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Sightseeing</span><span class="text-muted">1 hr 45 min</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Mount Batur at sunrise</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">Mount Batur and the crater lake at first light.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Penelokan viewpoint</p>
+        <p class="mt-3 rounded-lg bg-mist px-3 py-2 text-sm" data-field="activity.tip"><b>Local tip</b> · Arrive before 05:45 for the best spots.</p></li><li class="relative" data-activity-id="41c4e3e0-efb6-43ed-aee1-43b82a4513ec"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">07:00</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Food</span><span class="text-muted">1 hr</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Breakfast at the rim</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">Coffee, eggs and fried banana with the view.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Terrace warung</p>
+        </li><li class="relative" data-activity-id="cbf18eb2-135a-46b1-a2d0-da1b21fd52d5"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">08:00</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Sightseeing</span><span class="text-muted">1 hr 30 min</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Penglipuran bamboo village</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">Bamboo forest and traditional houses. The village ticket is paid on site.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Penglipuran, Bangli</p>
+        </li></ol>
+      <div class="mt-8 grid gap-5 sm:grid-cols-2" data-section="practical"><div><h4 class="text-lg font-semibold text-navy">Included</h4><ul class="mt-2 space-y-1.5 text-sm"><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Private car and driver</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Petrol and parking</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Bottled water</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>English and Bahasa Indonesia speaking driver</span></li></ul></div><div><h4 class="text-lg font-semibold text-navy">Not included</h4><ul class="mt-2 space-y-1.5 text-sm"><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Entrance tickets</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Meals and drinks</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Tip for the driver (optional)</span></li></ul></div><div><h4 class="text-lg font-semibold text-navy">What to bring</h4><ul class="mt-2 space-y-1.5 text-sm"><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Sarong and sash (or rent at the temple)</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Small IDR notes for tickets and parking</span></li></ul></div><div><h4 class="text-lg font-semibold text-navy">Local tip</h4><ul class="mt-2 space-y-1.5 text-sm"><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Dress in layers. The rim is cold before 06:00.</span></li></ul></div></div>
+      <p class="mt-8 text-sm text-muted"><b>Policies:</b> Cancellation: free up to 24 hours before pickup. Later cancellations are charged half the day rate. <a href="itinerary.html#policies" class="font-semibold text-navy underline decoration-gold decoration-2 underline-offset-4">All policies</a></p>
+    </div></details>
+  </article>
+<article data-component="tour-card" data-repeat-item data-repeat-clone id="culture" class="grid scroll-mt-28 gap-8 md:grid-cols-12" data-slug="ubud-terraces-and-villages">
+    <img src="../../shared/photos/tour-terraces-800.webp" width="800" height="533" loading="lazy" alt="Ubud Terraces and Villages" class="aspect-[4/3] w-full rounded-2xl object-cover md:col-span-5 md:order-2" data-field="cover">
+    <div class="md:col-span-7 md:order-1">
+      <p class="flex flex-wrap items-center gap-2"><span class="rounded-full bg-gold px-3 py-1 text-xs font-bold text-navy-deep" data-field="trip.mode">Full day</span><span class="rounded-full bg-mist px-3 py-1 text-sm font-medium">Culture</span></p>
+      <h2 class="mt-3 font-display text-3xl font-bold text-navy sm:text-4xl" data-field="trip.title">Ubud Terraces and Villages</h2>
+      <p class="mt-1 text-sm text-muted" data-field="trip.destination">Ubud · Gianyar, Central Bali · Indonesia</p>
+      <p class="mt-4 text-lg" data-field="summary">A full day of the Ubud highlands: terraces, craft villages and a spring temple, with a long lunch in between.</p>
+      <p class="mt-4 flex flex-wrap items-center gap-2 text-sm"><b>Route stages:</b><span class="rounded-full bg-mist px-3 py-1 text-sm font-medium !text-xs">Ubud</span><span class="rounded-full bg-mist px-3 py-1 text-sm font-medium !text-xs">Tegallalang</span><span class="rounded-full bg-mist px-3 py-1 text-sm font-medium !text-xs">Mas, Gianyar</span><span class="rounded-full bg-mist px-3 py-1 text-sm font-medium !text-xs">Tampaksiring</span><span class="rounded-full bg-mist px-3 py-1 text-sm font-medium !text-xs">Bedulu</span></p>
+      <div class="mt-5"><dl class="grid gap-x-8 gap-y-5 sm:grid-cols-2"><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Start time</dt><dd class="mt-1 font-medium">08:00–17:30</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Meeting point</dt><dd class="mt-1 font-medium">Your hotel lobby</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Pickup</dt><dd class="mt-1 font-medium">Hotels in Ubud and nearby</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Drop-off note</dt><dd class="mt-1 font-medium">Back at your hotel by about 17:30.</dd></div></dl></div>
+      <div class="mt-6 flex flex-wrap items-center gap-4">
+        <p class="text-sm text-muted">From <span class="font-display text-3xl font-bold text-navy">IDR <span data-field="site.price">650.000</span></span></p>
+        <a href="https://wa.me/6281200000000?text=Hello%20Wayan%2C%20I%20would%20like%20Ubud%20Terraces%20and%20Villages" class="btn-primary">Book on WhatsApp</a>
+        <a href="itinerary.html" class="font-semibold text-navy underline decoration-gold decoration-2 underline-offset-4">See a sample itinerary</a>
+      </div>
+    </div>
+    <details class="rounded-2xl border border-navy/15 group mt-8 md:col-span-12"><summary class="flex min-h-[48px] cursor-pointer list-none items-center justify-between gap-4 px-6 font-semibold text-navy">Itinerary: Terraces, craft and temples <span class="text-2xl text-copper transition group-open:rotate-45" aria-hidden="true">+</span></summary>
+    <div class="px-6 pb-7" data-section="schedule">
+      <ol class="space-y-8 border-l-2 border-gold pl-7 mt-2" data-repeat="activities"><li class="relative" data-activity-id="35b4f4fb-3eaf-4f2e-a14b-db4a50b1e261"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">08:00</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Transport</span><span class="text-muted">45 min</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Hotel pickup</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">Wayan collects you after breakfast.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Ubud</p>
+        </li><li class="relative" data-activity-id="2dbec70e-de4e-48e8-a9b8-8f44e4af5bb6"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">08:45</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Sightseeing</span><span class="text-muted">1 hr 30 min</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Tegallalang rice terraces</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">Arrive before 09:00 for empty paths. Walk down into the paddies.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Tegallalang</p>
+        <p class="mt-3 rounded-lg bg-mist px-3 py-2 text-sm" data-field="activity.tip"><b>Local tip</b> · Wear shoes with grip.</p></li><li class="relative" data-activity-id="34ca4bc7-c616-4141-a764-a44aefeb11bd"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">10:30</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Sightseeing</span><span class="text-muted">1 hr</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Mas woodcarving village</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">Watch carvers work. There is no pressure to buy.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Mas, Gianyar</p>
+        </li><li class="relative" data-activity-id="3862e47c-8e92-4158-a552-31665ef2d17e"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">12:00</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Activity</span><span class="text-muted">1 hr 30 min</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Tirta Empul spring temple</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">Join the purification ritual or watch from the side.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Tampaksiring</p>
+        <p class="mt-3 rounded-lg bg-mist px-3 py-2 text-sm" data-field="activity.tip"><b>Local tip</b> · Sarong required. Bring a change of clothes.</p></li><li class="relative" data-activity-id="e8975114-6904-49ec-a363-124b113e4d38"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">13:45</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Food</span><span class="text-muted">1 hr 15 min</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Lunch with a valley view</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">A warung lunch. Lunch is not included.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Tampaksiring</p>
+        </li><li class="relative" data-activity-id="a97a15a6-d6e4-4ae9-abc1-9c28aab4efa9"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">15:15</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Sightseeing</span><span class="text-muted">1 hr 15 min</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Goa Gajah</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">A rock-cut temple cave and bathing pools.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Bedulu</p>
+        </li><li class="relative" data-activity-id="e3903017-14aa-4e8a-a827-2dd57bb45537"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">16:45</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Transport</span><span class="text-muted">45 min</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Return to Ubud</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">Back at your hotel by about 17:30.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Ubud</p>
+        </li></ol>
+      <div class="mt-8 grid gap-5 sm:grid-cols-2" data-section="practical"><div><h4 class="text-lg font-semibold text-navy">Included</h4><ul class="mt-2 space-y-1.5 text-sm"><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Private car and driver</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Petrol and parking</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Bottled water</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>English and Bahasa Indonesia speaking driver</span></li></ul></div><div><h4 class="text-lg font-semibold text-navy">Not included</h4><ul class="mt-2 space-y-1.5 text-sm"><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Entrance tickets</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Meals and drinks</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Tip for the driver (optional)</span></li></ul></div><div><h4 class="text-lg font-semibold text-navy">What to bring</h4><ul class="mt-2 space-y-1.5 text-sm"><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Sarong and sash (or rent at the temple)</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Small IDR notes for tickets and parking</span></li></ul></div><div><h4 class="text-lg font-semibold text-navy">Local tip</h4><ul class="mt-2 space-y-1.5 text-sm"><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Go to Tegallalang first. The paths are empty before 09:00.</span></li></ul></div></div>
+      <p class="mt-8 text-sm text-muted"><b>Policies:</b> Cancellation: free up to 24 hours before pickup. Later cancellations are charged half the day rate. <a href="itinerary.html#policies" class="font-semibold text-navy underline decoration-gold decoration-2 underline-offset-4">All policies</a></p>
+    </div></details>
+  </article>
+<article data-component="tour-card" data-repeat-item data-repeat-clone id="coast" class="grid scroll-mt-28 gap-8 md:grid-cols-12" data-slug="uluwatu-sunset">
+    <img src="../../shared/photos/tour-uluwatu-sunset-800.webp" width="800" height="533" loading="lazy" alt="Uluwatu Sunset" class="aspect-[4/3] w-full rounded-2xl object-cover md:col-span-5 " data-field="cover">
+    <div class="md:col-span-7 ">
+      <p class="flex flex-wrap items-center gap-2"><span class="rounded-full bg-gold px-3 py-1 text-xs font-bold text-navy-deep" data-field="trip.mode">Half day</span><span class="rounded-full bg-mist px-3 py-1 text-sm font-medium">Coast</span></p>
+      <h2 class="mt-3 font-display text-3xl font-bold text-navy sm:text-4xl" data-field="trip.title">Uluwatu Sunset</h2>
+      <p class="mt-1 text-sm text-muted" data-field="trip.destination">Uluwatu · Badung, South Bali · Indonesia</p>
+      <p class="mt-4 text-lg" data-field="summary">The cliff temple at golden hour, then the kecak fire dance. Drop-off at your hotel in the evening.</p>
+      
+      <div class="mt-5"><dl class="grid gap-x-8 gap-y-5 sm:grid-cols-2"><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Start time</dt><dd class="mt-1 font-medium">15:00–20:00</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Meeting point</dt><dd class="mt-1 font-medium">Your hotel lobby</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Pickup</dt><dd class="mt-1 font-medium">Hotels in Ubud and nearby</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Drop-off note</dt><dd class="mt-1 font-medium">Back at your hotel by about 21:30.</dd></div></dl></div>
+      <div class="mt-6 flex flex-wrap items-center gap-4">
+        <p class="text-sm text-muted">From <span class="font-display text-3xl font-bold text-navy">IDR <span data-field="site.price">400.000</span></span></p>
+        <a href="https://wa.me/6281200000000?text=Hello%20Wayan%2C%20I%20would%20like%20Uluwatu%20Sunset" class="btn-primary">Book on WhatsApp</a>
+        <a href="itinerary.html" class="font-semibold text-navy underline decoration-gold decoration-2 underline-offset-4">See a sample itinerary</a>
+      </div>
+    </div>
+    <details class="rounded-2xl border border-navy/15 group mt-8 md:col-span-12"><summary class="flex min-h-[48px] cursor-pointer list-none items-center justify-between gap-4 px-6 font-semibold text-navy">Itinerary: Cliff temple and kecak <span class="text-2xl text-copper transition group-open:rotate-45" aria-hidden="true">+</span></summary>
+    <div class="px-6 pb-7" data-section="schedule">
+      <ol class="space-y-8 border-l-2 border-gold pl-7 mt-2" data-repeat="activities"><li class="relative" data-activity-id="cb13445e-f217-4df5-a9cc-c061d498a4c5"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">15:00</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Transport</span><span class="text-muted">1 hr 15 min</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Hotel pickup and drive south</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">Leave early to beat the afternoon traffic.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Ubud to Uluwatu</p>
+        </li><li class="relative" data-activity-id="41e39f89-b3a0-45f0-a3d1-12087ca83986"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">16:15</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Sightseeing</span><span class="text-muted">1 hr 45 min</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Uluwatu temple</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">Walk the cliff path as the light turns gold.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Uluwatu</p>
+        <p class="mt-3 rounded-lg bg-mist px-3 py-2 text-sm" data-field="activity.tip"><b>Local tip</b> · Keep sunglasses and phones away from the monkeys.</p></li><li class="relative" data-activity-id="9d6de8cd-a09c-4b3a-adbd-21d549f7c222"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">18:00</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Activity</span><span class="text-muted">1 hr</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Kecak fire dance</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">Tickets are bought on site. The dance starts at sunset.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Uluwatu temple amphitheatre</p>
+        <p class="mt-3 rounded-lg bg-mist px-3 py-2 text-sm" data-field="activity.tip"><b>Local tip</b> · Wear long trousers or a sarong.</p></li><li class="relative" data-activity-id="b66c11d3-95f0-46ff-a928-83e12ba0d10f"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">19:00</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Food</span><span class="text-muted">1 hr</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Dinner near the temple (optional)</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">Dinner is on your own. Wayan can suggest places that are quick before the drive back.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Uluwatu</p>
+        </li></ol>
+      <div class="mt-8 grid gap-5 sm:grid-cols-2" data-section="practical"><div><h4 class="text-lg font-semibold text-navy">Included</h4><ul class="mt-2 space-y-1.5 text-sm"><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Private car and driver</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Petrol and parking</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Bottled water</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>English and Bahasa Indonesia speaking driver</span></li></ul></div><div><h4 class="text-lg font-semibold text-navy">Not included</h4><ul class="mt-2 space-y-1.5 text-sm"><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Entrance tickets</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Meals and drinks</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Tip for the driver (optional)</span></li></ul></div><div><h4 class="text-lg font-semibold text-navy">What to bring</h4><ul class="mt-2 space-y-1.5 text-sm"><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Sarong and sash (or rent at the temple)</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Small IDR notes for tickets and parking</span></li></ul></div><div><h4 class="text-lg font-semibold text-navy">Local tip</h4><ul class="mt-2 space-y-1.5 text-sm"><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Traffic from Uluwatu can take 60 minutes after the show.</span></li></ul></div></div>
+      <p class="mt-8 text-sm text-muted"><b>Policies:</b> Cancellation: free up to 24 hours before pickup. Later cancellations are charged half the day rate. <a href="itinerary.html#policies" class="font-semibold text-navy underline decoration-gold decoration-2 underline-offset-4">All policies</a></p>
+    </div></details>
+  </article>
+<article data-component="tour-card" data-repeat-item data-repeat-clone id="temples" class="grid scroll-mt-28 gap-8 md:grid-cols-12" data-slug="bedugul-and-tanah-lot">
+    <img src="../../shared/photos/tour-bedugul-temple-800.webp" width="800" height="533" loading="lazy" alt="Bedugul and Tanah Lot" class="aspect-[4/3] w-full rounded-2xl object-cover md:col-span-5 md:order-2" data-field="cover">
+    <div class="md:col-span-7 md:order-1">
+      <p class="flex flex-wrap items-center gap-2"><span class="rounded-full bg-gold px-3 py-1 text-xs font-bold text-navy-deep" data-field="trip.mode">Full day</span><span class="rounded-full bg-mist px-3 py-1 text-sm font-medium">Temples</span></p>
+      <h2 class="mt-3 font-display text-3xl font-bold text-navy sm:text-4xl" data-field="trip.title">Bedugul and Tanah Lot</h2>
+      <p class="mt-1 text-sm text-muted" data-field="trip.destination">Bedugul · Tabanan, West Bali · Indonesia</p>
+      <p class="mt-4 text-lg" data-field="summary">The lake temple in the cool highlands in the morning, the sea temple at sunset.</p>
+      <p class="mt-4 flex flex-wrap items-center gap-2 text-sm"><b>Route stages:</b><span class="rounded-full bg-mist px-3 py-1 text-sm font-medium !text-xs">Ubud to Bedugul</span><span class="rounded-full bg-mist px-3 py-1 text-sm font-medium !text-xs">Bedugul</span><span class="rounded-full bg-mist px-3 py-1 text-sm font-medium !text-xs">Bedugul to Tanah Lot</span><span class="rounded-full bg-mist px-3 py-1 text-sm font-medium !text-xs">Tanah Lot area</span><span class="rounded-full bg-mist px-3 py-1 text-sm font-medium !text-xs">Tanah Lot</span></p>
+      <div class="mt-5"><dl class="grid gap-x-8 gap-y-5 sm:grid-cols-2"><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Start time</dt><dd class="mt-1 font-medium">08:00–19:30</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Meeting point</dt><dd class="mt-1 font-medium">Your hotel lobby</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Pickup</dt><dd class="mt-1 font-medium">Hotels in Ubud and nearby</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Drop-off note</dt><dd class="mt-1 font-medium">Back at your hotel by about 19:30.</dd></div></dl></div>
+      <div class="mt-6 flex flex-wrap items-center gap-4">
+        <p class="text-sm text-muted">From <span class="font-display text-3xl font-bold text-navy">IDR <span data-field="site.price">650.000</span></span></p>
+        <a href="https://wa.me/6281200000000?text=Hello%20Wayan%2C%20I%20would%20like%20Bedugul%20and%20Tanah%20Lot" class="btn-primary">Book on WhatsApp</a>
+        <a href="itinerary.html" class="font-semibold text-navy underline decoration-gold decoration-2 underline-offset-4">See a sample itinerary</a>
+      </div>
+    </div>
+    <details class="rounded-2xl border border-navy/15 group mt-8 md:col-span-12"><summary class="flex min-h-[48px] cursor-pointer list-none items-center justify-between gap-4 px-6 font-semibold text-navy">Itinerary: Lake temple and sea temple <span class="text-2xl text-copper transition group-open:rotate-45" aria-hidden="true">+</span></summary>
+    <div class="px-6 pb-7" data-section="schedule">
+      <ol class="space-y-8 border-l-2 border-gold pl-7 mt-2" data-repeat="activities"><li class="relative" data-activity-id="81356b31-6554-4797-aabc-bc7dbfe0c4e8"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">08:00</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Transport</span><span class="text-muted">1 hr 45 min</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Hotel pickup and drive to Bedugul</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">A scenic drive up to the highland lakes.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Ubud to Bedugul</p>
+        </li><li class="relative" data-activity-id="1925629a-b618-4329-aeb1-2a959454c0da"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">09:45</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Sightseeing</span><span class="text-muted">1 hr 15 min</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Ulun Danu Beratan temple</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">The lake temple. Best before 10:00, before the tour buses arrive.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Bedugul</p>
+        </li><li class="relative" data-activity-id="20e8da29-c76d-44dc-ac31-f7069d6e2474"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">11:15</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Food</span><span class="text-muted">1 hr 15 min</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Lunch near the lake</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">Lunch is not included.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Bedugul</p>
+        </li><li class="relative" data-activity-id="7300c2e6-4650-4800-a1a5-baa7103fb581"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">12:45</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Transport</span><span class="text-muted">1 hr 15 min</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Drive to the west coast</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">Down from the highlands to the coast.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Bedugul to Tanah Lot</p>
+        </li><li class="relative" data-activity-id="4a825347-cdc1-4b96-a656-c59b9adfc04a"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">14:00</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Free time</span><span class="text-muted">2 hr</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Coffee and rest near Tanah Lot</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">Rest before the sunset crowds arrive.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Tanah Lot area</p>
+        </li><li class="relative" data-activity-id="d21d1afa-8339-48bb-a3cc-dbf6789a09e9"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">16:00</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Sightseeing</span><span class="text-muted">2 hr</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Tanah Lot at sunset</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">The sea temple on its rock. The temple is reachable at low tide only.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Tanah Lot</p>
+        <p class="mt-3 rounded-lg bg-mist px-3 py-2 text-sm" data-field="activity.tip"><b>Local tip</b> · Wayan checks the tide for your date.</p></li><li class="relative" data-activity-id="29658387-eb39-428e-ab9b-a4735664e2d9"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">18:00</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Transport</span><span class="text-muted">1 hr 30 min</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Return to Ubud</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">Back at your hotel by about 19:30.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Ubud</p>
+        </li></ol>
+      <div class="mt-8 grid gap-5 sm:grid-cols-2" data-section="practical"><div><h4 class="text-lg font-semibold text-navy">Included</h4><ul class="mt-2 space-y-1.5 text-sm"><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Private car and driver</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Petrol and parking</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Bottled water</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>English and Bahasa Indonesia speaking driver</span></li></ul></div><div><h4 class="text-lg font-semibold text-navy">Not included</h4><ul class="mt-2 space-y-1.5 text-sm"><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Entrance tickets</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Meals and drinks</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Tip for the driver (optional)</span></li></ul></div><div><h4 class="text-lg font-semibold text-navy">What to bring</h4><ul class="mt-2 space-y-1.5 text-sm"><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Sarong and sash (or rent at the temple)</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Small IDR notes for tickets and parking</span></li></ul></div><div><h4 class="text-lg font-semibold text-navy">Local tip</h4><ul class="mt-2 space-y-1.5 text-sm"><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Bedugul is cool. Bring a light jacket.</span></li></ul></div></div>
+      <p class="mt-8 text-sm text-muted"><b>Policies:</b> Cancellation: free up to 24 hours before pickup. Later cancellations are charged half the day rate. <a href="itinerary.html#policies" class="font-semibold text-navy underline decoration-gold decoration-2 underline-offset-4">All policies</a></p>
+    </div></details>
+  </article>
+<article data-component="tour-card" data-repeat-item data-repeat-clone id="airport" class="scroll-mt-28 rounded-2xl border border-navy/15 p-8"><p class="rounded-full bg-mist px-3 py-1 text-sm font-medium inline-block">Airport · about 1,5 hours</p><h2 class="mt-3 font-display text-3xl font-bold text-navy sm:text-4xl">Airport Transfer, Ngurah Rai to Ubud</h2><p class="mt-3 max-w-2xl">Wayan waits at arrivals with your name on a card. Up to 4 large bags. Flight delays are not charged. Fixed price, no meter.</p><div class="mt-6 flex flex-wrap items-center gap-4"><p class="text-sm text-muted">Fixed price <span class="font-display text-3xl font-bold text-navy">IDR 350.000</span></p><a href="https://wa.me/6281200000000?text=Hello%20Wayan%2C%20airport%20transfer" class="btn-primary">Book this transfer</a></div></article>
+</div></section>
 <!-- /component:tour-grid -->
+
+<!-- component:places -->
+<section data-component="places" id="places" data-section="guide" class="bg-mist scroll-mt-28"><div class="mx-auto max-w-6xl px-5 py-20">
+  <p class="eyebrow">Explore places</p><h2 class="font-display text-3xl font-bold text-navy sm:text-4xl" data-field="trip.title">Places worth the drive around Ubud</h2><p class="mt-3 max-w-2xl text-lg" data-field="summary">Seven places Wayan drives guests to most often, with how long to stay, when to go and how to get there.</p>
+  <section class="mt-12"><h3 class="font-display text-2xl font-bold text-navy mb-5" data-field="place.group">Ubud and around</h3><div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3" data-repeat="places"><article data-component="place-card" data-repeat-item data-place-id="52157074-e6f6-4dbb-ac1e-09555d49bd21" class="rounded-2xl border border-navy/15 bg-snow p-7 flex flex-col !p-0 overflow-hidden"><img src="../../shared/photos/tour-terraces-800.webp" width="800" height="533" loading="lazy" alt="Tegallalang rice terraces" class="aspect-[16/9] w-full object-cover" data-field="place.photo">
+      <div class="flex flex-1 flex-col p-7"><p class="text-xs font-semibold tracking-wide text-copper uppercase">01</p><h4 class="mt-1 font-display text-2xl font-bold text-navy" data-field="place.name">Tegallalang rice terraces</h4><p class="text-sm font-semibold text-muted" data-field="place.area">Tegallalang, Gianyar</p>
+      <p class="mt-3" data-field="place.description">Terraced rice fields on a steep valley wall, with paths down into the paddies.</p>
+      <dl class="mt-5 grid gap-4 text-sm"><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Suggested duration</dt><dd class="mt-1">1 to 1,5 hours</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Best time</dt><dd class="mt-1">Early morning, before 09:00</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Getting there</dt><dd class="mt-1">About 25 minutes by car from Ubud centre.</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Nearby</dt><dd class="mt-1">Swing and coffee plantations along the same road</dd></div></dl>
+      <p class="mt-5 rounded-lg bg-mist px-3 py-2 text-sm" data-field="place.tips"><b>Local tip</b> · Arrive before 09:00 for empty paths. · Wear shoes with grip.</p></div></article><article data-component="place-card" data-repeat-item data-place-id="bce63f85-f9c4-45a9-ab26-fcfd658105f0" class="rounded-2xl border border-navy/15 bg-snow p-7 flex flex-col !p-0 overflow-hidden">
+      <div class="flex flex-1 flex-col p-7"><p class="text-xs font-semibold tracking-wide text-copper uppercase">02</p><h4 class="mt-1 font-display text-2xl font-bold text-navy" data-field="place.name">Tirta Empul</h4><p class="text-sm font-semibold text-muted" data-field="place.area">Tampaksiring, Gianyar</p>
+      <p class="mt-3" data-field="place.description">A holy spring temple where Balinese families come to purify in the pools.</p>
+      <dl class="mt-5 grid gap-4 text-sm"><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Suggested duration</dt><dd class="mt-1">1,5 hours</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Best time</dt><dd class="mt-1">Before 11:00</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Getting there</dt><dd class="mt-1">About 40 minutes by car from Ubud.</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Nearby</dt><dd class="mt-1">Gunung Kawi, Tampaksiring palace</dd></div></dl>
+      <p class="mt-5 rounded-lg bg-mist px-3 py-2 text-sm" data-field="place.tips"><b>Local tip</b> · Sarong required, rent one at the gate. · Bring a change of clothes to join the ritual.</p></div></article><article data-component="place-card" data-repeat-item data-place-id="7a5083b3-b8c6-417c-a018-6c78937f362d" class="rounded-2xl border border-navy/15 bg-snow p-7 flex flex-col !p-0 overflow-hidden">
+      <div class="flex flex-1 flex-col p-7"><p class="text-xs font-semibold tracking-wide text-copper uppercase">03</p><h4 class="mt-1 font-display text-2xl font-bold text-navy" data-field="place.name">Goa Gajah</h4><p class="text-sm font-semibold text-muted" data-field="place.area">Bedulu, Gianyar</p>
+      <p class="mt-3" data-field="place.description">A rock-cut temple cave and bathing pools from the 11th century.</p>
+      <dl class="mt-5 grid gap-4 text-sm"><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Suggested duration</dt><dd class="mt-1">1 hour</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Best time</dt><dd class="mt-1">Afternoon</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Getting there</dt><dd class="mt-1">About 15 minutes by car from Ubud.</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Nearby</dt><dd class="mt-1">Yeh Pulu relief</dd></div></dl>
+      <p class="mt-5 rounded-lg bg-mist px-3 py-2 text-sm" data-field="place.tips"><b>Local tip</b> · Cover shoulders and knees.</p></div></article></div></section><section class="mt-12"><h3 class="font-display text-2xl font-bold text-navy mb-5" data-field="place.group">Highlands and volcano</h3><div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3" data-repeat="places"><article data-component="place-card" data-repeat-item data-place-id="8e63e1ce-8ef2-4f19-acbe-95b42315357e" class="rounded-2xl border border-navy/15 bg-snow p-7 flex flex-col !p-0 overflow-hidden"><img src="../../shared/photos/tour-batur-sunrise-800.webp" width="800" height="533" loading="lazy" alt="Mount Batur and the Kintamani rim" class="aspect-[16/9] w-full object-cover" data-field="place.photo">
+      <div class="flex flex-1 flex-col p-7"><p class="text-xs font-semibold tracking-wide text-copper uppercase">04</p><h4 class="mt-1 font-display text-2xl font-bold text-navy" data-field="place.name">Mount Batur and the Kintamani rim</h4><p class="text-sm font-semibold text-muted" data-field="place.area">Kintamani, Bangli</p>
+      <p class="mt-3" data-field="place.description">A volcano and crater lake seen from the rim road. Sunrise is the main reason to go.</p>
+      <dl class="mt-5 grid gap-4 text-sm"><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Suggested duration</dt><dd class="mt-1">3 to 4 hours with breakfast</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Best time</dt><dd class="mt-1">Sunrise, April to October</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Getting there</dt><dd class="mt-1">About 1 hour 15 minutes by car from Ubud.</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Nearby</dt><dd class="mt-1">Penglipuran village, Tegenungan</dd></div></dl>
+      <p class="mt-5 rounded-lg bg-mist px-3 py-2 text-sm" data-field="place.tips"><b>Local tip</b> · Dress in layers. It is about 15 °C before 06:00. · Book breakfast with a view at a rim warung.</p></div></article><article data-component="place-card" data-repeat-item data-place-id="aecb0f5f-7915-4f25-a7cc-56b3916106dc" class="rounded-2xl border border-navy/15 bg-snow p-7 flex flex-col !p-0 overflow-hidden"><img src="../../shared/photos/tour-bedugul-temple-800.webp" width="800" height="533" loading="lazy" alt="Ulun Danu Beratan" class="aspect-[16/9] w-full object-cover" data-field="place.photo">
+      <div class="flex flex-1 flex-col p-7"><p class="text-xs font-semibold tracking-wide text-copper uppercase">05</p><h4 class="mt-1 font-display text-2xl font-bold text-navy" data-field="place.name">Ulun Danu Beratan</h4><p class="text-sm font-semibold text-muted" data-field="place.area">Bedugul, Tabanan</p>
+      <p class="mt-3" data-field="place.description">A temple complex on the shore of a highland lake.</p>
+      <dl class="mt-5 grid gap-4 text-sm"><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Suggested duration</dt><dd class="mt-1">1 to 1,5 hours</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Best time</dt><dd class="mt-1">Early morning</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Getting there</dt><dd class="mt-1">About 1 hour 45 minutes by car from Ubud.</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Nearby</dt><dd class="mt-1">Handara gate, Jatiluwih terraces</dd></div></dl>
+      <p class="mt-5 rounded-lg bg-mist px-3 py-2 text-sm" data-field="place.tips"><b>Local tip</b> · Go before 10:00 to avoid tour buses. · Bring a light jacket.</p></div></article></div></section><section class="mt-12"><h3 class="font-display text-2xl font-bold text-navy mb-5" data-field="place.group">Coast</h3><div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3" data-repeat="places"><article data-component="place-card" data-repeat-item data-place-id="4c8e9310-13a1-4bb7-a2ab-73a0557bbbf2" class="rounded-2xl border border-navy/15 bg-snow p-7 flex flex-col !p-0 overflow-hidden"><img src="../../shared/photos/tour-uluwatu-sunset-800.webp" width="800" height="533" loading="lazy" alt="Uluwatu temple" class="aspect-[16/9] w-full object-cover" data-field="place.photo">
+      <div class="flex flex-1 flex-col p-7"><p class="text-xs font-semibold tracking-wide text-copper uppercase">06</p><h4 class="mt-1 font-display text-2xl font-bold text-navy" data-field="place.name">Uluwatu temple</h4><p class="text-sm font-semibold text-muted" data-field="place.area">Uluwatu, Badung</p>
+      <p class="mt-3" data-field="place.description">A sea temple on a cliff, famous for sunset and the kecak dance.</p>
+      <dl class="mt-5 grid gap-4 text-sm"><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Suggested duration</dt><dd class="mt-1">2 to 3 hours with the dance</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Best time</dt><dd class="mt-1">Late afternoon to sunset</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Getting there</dt><dd class="mt-1">About 1 hour 45 minutes by car from Ubud.</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Nearby</dt><dd class="mt-1">Padang Padang, Jimbaran</dd></div></dl>
+      <p class="mt-5 rounded-lg bg-mist px-3 py-2 text-sm" data-field="place.tips"><b>Local tip</b> · Keep sunglasses and phones away from the monkeys. · Wear long trousers or a sarong.</p></div></article><article data-component="place-card" data-repeat-item data-place-id="5a1109a1-6b5e-44b7-ae85-1bb9b291f54e" class="rounded-2xl border border-navy/15 bg-snow p-7 flex flex-col !p-0 overflow-hidden"><img src="../../shared/photos/tour-tanah-lot-800.webp" width="800" height="533" loading="lazy" alt="Tanah Lot" class="aspect-[16/9] w-full object-cover" data-field="place.photo">
+      <div class="flex flex-1 flex-col p-7"><p class="text-xs font-semibold tracking-wide text-copper uppercase">07</p><h4 class="mt-1 font-display text-2xl font-bold text-navy" data-field="place.name">Tanah Lot</h4><p class="text-sm font-semibold text-muted" data-field="place.area">Beraban, Tabanan</p>
+      <p class="mt-3" data-field="place.description">A sea temple on a rock, reachable on foot at low tide.</p>
+      <dl class="mt-5 grid gap-4 text-sm"><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Suggested duration</dt><dd class="mt-1">1,5 to 2 hours</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Best time</dt><dd class="mt-1">Late afternoon</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Getting there</dt><dd class="mt-1">About 1 hour 15 minutes by car from Ubud.</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Nearby</dt><dd class="mt-1">Pererenan beach</dd></div></dl>
+      <p class="mt-5 rounded-lg bg-mist px-3 py-2 text-sm" data-field="place.tips"><b>Local tip</b> · Check the tide before you go. · Arrive before 16:00 to avoid the sunset crowd.</p></div></article></div></section>
+  <div class="mt-12 text-sm text-muted">Travel times are estimates and change with traffic.</div>
+  <p class="mt-4 text-xs text-muted">Photo credits: <a href="https://commons.wikimedia.org/wiki/File:Sunrise_on_Mount_Batur_-_panoramio_(4).jpg" target="_blank" rel="noopener noreferrer" class="underline">Alexey Komarov</a> · Wikimedia Commons (CC BY 3.0); <a href="https://commons.wikimedia.org/wiki/File:Tegallalang_Rice_Terraces_Bali.jpg" target="_blank" rel="noopener noreferrer" class="underline">Philip Nalangan</a> · Wikimedia Commons (CC BY 4.0); <a href="https://commons.wikimedia.org/wiki/File:Kuta_Bali_Indonesia_Pura-Luhur-Uluwatu-04.jpg" target="_blank" rel="noopener noreferrer" class="underline">CEphoto, Uwe Aranas</a> · Wikimedia Commons (CC BY-SA 3.0); <a href="https://commons.wikimedia.org/wiki/File:Pura_Ulun_Danu_Beratan_Bedugul_Bali.jpg" target="_blank" rel="noopener noreferrer" class="underline">Ananta Chandra Priambodo</a> · Wikimedia Commons (CC BY-SA 4.0); <a href="https://commons.wikimedia.org/wiki/File:Tanah-Lot_Bali_Indonesia_Pura-Tanah-Lot-01.jpg" target="_blank" rel="noopener noreferrer" class="underline">CEphoto, Uwe Aranas</a> · Wikimedia Commons (CC BY-SA 3.0)</p>
+</div></section>
+<!-- /component:places -->
 
 <!-- component:custom-route -->
 <section data-component="custom-route" id="custom" class="scroll-mt-24 bg-navy text-snow">

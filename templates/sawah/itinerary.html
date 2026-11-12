@@ -42,112 +42,126 @@
 </header>
 <!-- /component:header -->
 
-<main id="main">
-
-<!-- component:itinerary-cover -->
-<section data-component="itinerary-cover" class="relative isolate overflow-hidden text-snow">
-  <img src="../../shared/photos/tour-batur-sunrise.webp" width="1440" height="983" fetchpriority="high" alt="Sunrise over Mount Batur" class="absolute inset-0 -z-20 h-full w-full object-cover" data-field="cover">
-  <div class="absolute inset-0 -z-10 bg-gradient-to-t from-navy-deep via-navy-deep/60 to-navy-deep/20 print:bg-navy-deep/70" aria-hidden="true"></div>
-  <div class="mx-auto max-w-3xl px-5 pb-12 pt-32 print:pt-16">
-    <p class="eyebrow !text-gold">Itinerary for</p>
-    <h1 class="text-4xl leading-[1.1] font-bold sm:text-5xl" data-field="trip.title">Three days in Bali: the volcano, Ubud and the south coast</h1>
-    <p class="mt-4 text-lg text-snow/90"><span data-field="trip.destination">Bali</span> · <span data-field="trip.dates">12–14 March 2027</span> · <span data-field="trip.guests">2 adults, 1 child</span></p>
-    <p class="mt-5 text-snow/85" data-field="summary">A slow first trip: early starts for the best light, long lunches in between, and the drive back to Ubud before the afternoon traffic.</p>
-  </div>
-</section>
-<!-- /component:itinerary-cover -->
-
+<main id="main" data-engine="itinerary">
+<header data-section="hero" class="relative isolate overflow-hidden text-snow"><img src="../../shared/photos/tour-batur-sunrise.webp" width="1440" height="983" fetchpriority="high" alt="Hero photo" class="absolute inset-0 -z-20 h-full w-full object-cover" data-field="cover">
+        <div class="absolute inset-0 -z-10 bg-gradient-to-t from-navy-deep via-navy-deep/60 to-navy-deep/25 print:bg-navy-deep/70" aria-hidden="true"></div>
+        <div class="mx-auto max-w-3xl px-5 pb-14 pt-24 print:pt-10">
+          <div class="mb-8 flex items-center justify-between gap-4 text-xs font-bold tracking-widest uppercase"><span data-field="agency.name">Sudiarta Bali Drive</span><span class="rounded-full border border-snow/50 px-3 py-1">3 days</span></div>
+          <p class="mb-2 text-xs font-bold tracking-widest text-gold uppercase">Multi-day</p>
+          <h1 class="max-w-3xl font-display text-4xl leading-[1.1] font-bold sm:text-6xl" data-field="trip.title">Three days in Bali: the volcano, Ubud and the south coast</h1>
+          <p class="mt-4 text-lg text-snow/90" data-field="trip.destination">Bali · Kintamani, Ubud and Uluwatu · Indonesia</p></div></header>
 <div class="mx-auto max-w-3xl px-5 pb-16">
-
-<!-- component:meeting-pickup -->
-<section data-component="meeting-pickup" class="-mt-6 grid gap-4 rounded-2xl bg-mist p-6 shadow-sm sm:grid-cols-2 print:mt-4">
-  <div><p class="text-sm font-semibold text-copper">Pickup</p><p class="font-semibold" data-field="pickup.area">Hotel in Ubud</p><p class="text-sm text-muted" data-field="pickup.time">Day 1 at 03.30 · Day 2 at 08.00 · Day 3 at 13.30</p></div>
-  <div><p class="text-sm font-semibold text-copper">Meeting point</p><p class="font-semibold" data-field="meeting.place">Hotel lobby</p><p class="text-sm text-muted" data-field="meeting.note">Wayan waits at the entrance with a name card.</p></div>
+<section data-section="trip-info" class="mt-10"><div class="grid gap-5"><div class="rounded-2xl border border-navy/15 bg-snow p-7 !p-8"><h3 class="text-lg font-semibold text-navy mb-6">When</h3><dl class="grid gap-x-8 gap-y-5 sm:grid-cols-2"><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Start date</dt><dd class="mt-1 font-medium">Mar 12, 2027</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">End date</dt><dd class="mt-1 font-medium">Mar 14, 2027</dd></div></dl></div><div class="rounded-2xl border border-navy/15 bg-snow p-7 !p-8"><h3 class="text-lg font-semibold text-navy mb-6">Where we meet</h3><dl class="grid gap-x-8 gap-y-5 sm:grid-cols-2"><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Meeting point</dt><dd class="mt-1 font-medium">Hotel lobby, Ubud</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Map link</dt><dd class="mt-1 font-medium"><a href="https://maps.google.com/?q=Ubud+Bali" target="_blank" rel="noopener noreferrer" class="font-semibold text-navy underline decoration-gold decoration-2 underline-offset-4">Map link</a></dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Meeting time</dt><dd class="mt-1 font-medium">03:30</dd></div><div class="sm:col-span-2"><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Meeting point note</dt><dd class="mt-1 font-medium">Wayan waits at the entrance with a name card. Day 2 pickup is at 08:00 and Day 3 pickup at 13:30, at the same spot.</dd></div></dl></div><div class="rounded-2xl border border-navy/15 bg-snow p-7 !p-8"><h3 class="text-lg font-semibold text-navy mb-6">Pickup and drop-off</h3><dl class="grid gap-x-8 gap-y-5 sm:grid-cols-2"><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Pickup</dt><dd class="mt-1 font-medium">Hotels in Ubud and Penestanan</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Pickup time</dt><dd class="mt-1 font-medium">03:30</dd></div><div class="sm:col-span-2"><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Drop-off note</dt><dd class="mt-1 font-medium">Dropped at your hotel after each day. Day 3 ends around 21:00.</dd></div></dl></div><div class="rounded-2xl border border-navy/15 bg-snow p-7 !p-8"><h3 class="text-lg font-semibold text-navy mb-6">Your guide</h3><dl class="grid gap-x-8 gap-y-5 sm:grid-cols-2"><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Guide name</dt><dd class="mt-1 font-medium">Wayan Sudiarta</dd></div><div><dt class="text-xs font-semibold tracking-wide text-copper uppercase">Guide phone</dt><dd class="mt-1 font-medium"><a href="https://wa.me/6281200000000?text=Hello%20Wayan%20Sudiarta%2C%20question%20about%20my%20itinerary" class="font-semibold text-navy underline decoration-gold decoration-2 underline-offset-4">+62 812-0000-0000</a></dd></div></dl></div></div></section>
+<section class="mt-12" id="summary" data-section="summary"><h2 class="font-display text-3xl font-bold text-navy sm:text-4xl">Trip overview</h2><p class="mt-4 max-w-3xl text-lg leading-relaxed" data-field="summary">A slow first trip: early starts for the best light, long lunches in between, and the drive back to Ubud before the afternoon traffic.</p></section>
+<section class="mt-8" id="route" data-section="route"><p class="mb-3 font-semibold">Route stages</p><ul class="flex flex-wrap gap-2" data-repeat="route"><li class="rounded-full bg-mist px-3 py-1 text-sm font-medium">Kintamani, Penglipuran, Tegallalang</li><li class="rounded-full bg-mist px-3 py-1 text-sm font-medium">Ubud, Mas and Tirta Empul</li><li class="rounded-full bg-mist px-3 py-1 text-sm font-medium">Nusa Dua and Uluwatu</li></ul></section>
+<section class="mt-16" id="schedule" data-section="schedule"><h2 class="font-display text-3xl font-bold text-navy sm:text-4xl">Itinerary</h2>
+<nav data-component="day-nav" aria-label="Itinerary" class="sticky z-30 -mx-5 border-y border-navy/10 bg-snow/95 px-5 py-3 backdrop-blur print:hidden top-[69px] mt-6"><ul class="flex gap-2 overflow-x-auto" data-repeat="days"><li><a href="#day-1" data-day-link class="inline-flex min-h-[44px] items-center whitespace-nowrap rounded-full border border-navy/30 px-4 text-sm font-semibold text-navy aria-[current=true]:border-navy aria-[current=true]:bg-navy aria-[current=true]:text-snow">Day 1 · Kintamani</a></li><li><a href="#day-2" data-day-link class="inline-flex min-h-[44px] items-center whitespace-nowrap rounded-full border border-navy/30 px-4 text-sm font-semibold text-navy aria-[current=true]:border-navy aria-[current=true]:bg-navy aria-[current=true]:text-snow">Day 2 · Ubud</a></li><li><a href="#day-3" data-day-link class="inline-flex min-h-[44px] items-center whitespace-nowrap rounded-full border border-navy/30 px-4 text-sm font-semibold text-navy aria-[current=true]:border-navy aria-[current=true]:bg-navy aria-[current=true]:text-snow">Day 3 · Nusa Dua and Uluwatu</a></li></ul></nav>
+<article data-component="day" data-day-id="1900e55c-3ace-49fd-a3f6-a184b66b6e45" data-day id="day-1" class="pt-10 print:block"><header class="mb-6"><p class="text-xs font-semibold tracking-wide text-copper uppercase">Day 1 · Mar 12, 2027</p><h3 class="mt-1 font-display text-2xl font-bold text-navy" data-field="day.title">Kintamani sunrise and the terraces</h3><p class="mt-1 text-sm text-muted" data-field="day.location">Kintamani, Penglipuran, Tegallalang</p></header><img src="../../shared/photos/tour-terraces-800.webp" width="800" height="533" loading="lazy" alt="Region photo" class="mb-6 aspect-[16/7] w-full rounded-xl object-cover" data-field="day.photo"><ol class="space-y-8 border-l-2 border-gold pl-7" data-repeat="activities"><li class="relative" data-activity-id="b981c0d1-1db5-4f58-a5c7-e93048e12185"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">03:30</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Transport</span><span class="text-muted">1 hr</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Hotel pickup and drive north</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">Wayan collects you at the hotel lobby. The road is empty before 04:00, so you can rest in the car.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Ubud</p>
+        <p class="mt-3 rounded-lg bg-mist px-3 py-2 text-sm" data-field="activity.tip"><b>Local tip</b> · Bring a warm layer. It is about 15 °C at the rim.</p></li><li class="relative" data-activity-id="aec0f4cd-fadf-4a20-ad84-6fd445b1308e"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">05:30</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Sightseeing</span><span class="text-muted">2 hr</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Mount Batur at sunrise</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">Find a spot on the crater rim before first light. Mount Batur and the lake come into view as the sky turns orange.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Penelokan viewpoint, Kintamani</p>
+        <p class="mt-3 rounded-lg bg-mist px-3 py-2 text-sm" data-field="activity.tip"><b>Local tip</b> · Arrive before 05:45 for the best spots.</p></li><li class="relative" data-activity-id="561170ce-da2f-4505-ab02-5d9283796cf2"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">07:30</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Food</span><span class="text-muted">1 hr</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Breakfast at the rim</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">Coffee, eggs and fried banana at a family warung with a view of the caldera.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Terrace warung, Kintamani</p>
+        </li><li class="relative" data-activity-id="aa1acf4d-386a-4007-aec2-4ec8483de66a"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">09:00</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Sightseeing</span><span class="text-muted">1 hr 30 min</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Penglipuran bamboo village</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">Walk the main lane of the traditional village and see the matching family compounds. The village ticket is paid on site.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Penglipuran, Bangli</p>
+        <p class="mt-3 rounded-lg bg-mist px-3 py-2 text-sm" data-field="activity.tip"><b>Local tip</b> · Ask before taking photos inside family compounds.</p></li><li class="relative" data-activity-id="d4c4c7e8-35c4-42d9-a5f0-62d99ffdef54"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">11:00</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Food</span><span class="text-muted">1 hr 15 min</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Lunch with a valley view</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">Lunch at a terrace restaurant above the rice paddies. Lunch is not included in the price.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Tegallalang</p>
+        </li><li class="relative" data-activity-id="be394a1f-95f0-4b8b-aea5-b435ac64e8e7"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">12:30</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Sightseeing</span><span class="text-muted">1 hr 30 min</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Tegallalang rice terraces</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">Walk down into the paddies, not only the top platform. Wayan knows the quieter paths.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Tegallalang</p>
+        <p class="mt-3 rounded-lg bg-mist px-3 py-2 text-sm" data-field="activity.tip"><b>Local tip</b> · Wear shoes with grip. The steps are uneven.</p></li><li class="relative" data-activity-id="200ec568-7ead-4772-ac57-1b63117d81c8"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">14:30</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Transport</span><span class="text-muted">45 min</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Return to Ubud</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">Back at your hotel by about 15:15, in time to rest before dinner.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Ubud</p>
+        </li></ol><p class="mt-5 text-sm"><b>Meals:</b> Breakfast</p><div class="rounded-2xl bg-mist p-7 mt-5 !p-5"><p><b>Hotel:</b> <span data-field="day.hotel.name">Ubud guest house</span></p><p class="mt-1 text-sm text-muted">Penestanan, Ubud · Same hotel for Day 1 and Day 2.</p></div></article>
+<article data-component="day" data-day-id="a7ce8995-0cea-439e-ac14-7c2db43484ff" data-day id="day-2" class="pt-10 print:block"><header class="mb-6"><p class="text-xs font-semibold tracking-wide text-copper uppercase">Day 2 · Mar 13, 2027</p><h3 class="mt-1 font-display text-2xl font-bold text-navy" data-field="day.title">Ubud art and temples</h3><p class="mt-1 text-sm text-muted" data-field="day.location">Ubud, Mas and Tirta Empul</p></header><ol class="space-y-8 border-l-2 border-gold pl-7" data-repeat="activities"><li class="relative" data-activity-id="47a75ed3-2713-4c1f-a2ed-337cf50e938f"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">08:00</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Transport</span><span class="text-muted">30 min</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Hotel pickup</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">Breakfast at the hotel first, then Wayan collects you.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Ubud</p>
+        </li><li class="relative" data-activity-id="86e97548-42ec-45b5-ad9b-456fcf539150"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">09:00</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Sightseeing</span><span class="text-muted">1 hr 30 min</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Mas woodcarving village</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">Watch carvers at work in family studios. There is no pressure to buy.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Mas, Gianyar</p>
+        </li><li class="relative" data-activity-id="fc709bd1-45b2-4fe0-a231-0e5d5c7d9aac"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">11:00</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Activity</span><span class="text-muted">1 hr 30 min</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Tirta Empul spring temple</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">Visit the holy spring where Balinese families come to purify. You can join the ritual or simply watch.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Tampaksiring</p>
+        <p class="mt-3 rounded-lg bg-mist px-3 py-2 text-sm" data-field="activity.tip"><b>Local tip</b> · Sarong required. Bring a change of clothes and go before 11:00 for a quieter pool.</p></li><li class="relative" data-activity-id="fa174ad3-f3cf-4bca-a4a8-d28e188eb705"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">13:00</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Food</span><span class="text-muted">1 hr 15 min</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Lunch in Tampaksiring</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">A simple warung lunch. Ask Wayan for his favourite nasi campur.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Tampaksiring</p>
+        </li><li class="relative" data-activity-id="215aad0b-039d-466c-a5d3-880ffc9365da"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">14:30</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Sightseeing</span><span class="text-muted">1 hr 15 min</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Goa Gajah</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">A rock-cut temple cave and bathing pools from the 11th century, on the way back.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Bedulu, Gianyar</p>
+        </li><li class="relative" data-activity-id="93536857-4695-405d-ab4f-1a94429633e3"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">16:00</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Free time</span><span class="text-muted">1 hr</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Free time in Ubud town</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">Wayan drops you in the centre for shops and cafes and picks you up again at 17:00.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Ubud centre</p>
+        </li><li class="relative" data-activity-id="c2d44722-cecd-4814-a2ce-3e5e84d0ffae"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">17:00</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Transport</span><span class="text-muted">30 min</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Return to the hotel</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">Back at your hotel by about 17:30.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Ubud</p>
+        </li></ol><p class="mt-5 text-sm"><b>Meals:</b> Breakfast</p><div class="rounded-2xl bg-mist p-7 mt-5 !p-5"><p><b>Hotel:</b> <span data-field="day.hotel.name">Ubud guest house</span></p><p class="mt-1 text-sm text-muted">Penestanan, Ubud</p></div></article>
+<article data-component="day" data-day-id="6533ce31-00f2-436d-a34c-6a614d8d0c5b" data-day id="day-3" class="pt-10 print:block"><header class="mb-6"><p class="text-xs font-semibold tracking-wide text-copper uppercase">Day 3 · Mar 14, 2027</p><h3 class="mt-1 font-display text-2xl font-bold text-navy" data-field="day.title">South coast and sunset</h3><p class="mt-1 text-sm text-muted" data-field="day.location">Nusa Dua and Uluwatu</p></header><img src="../../shared/photos/tour-uluwatu-sunset-800.webp" width="800" height="533" loading="lazy" alt="Region photo" class="mb-6 aspect-[16/7] w-full rounded-xl object-cover" data-field="day.photo"><ol class="space-y-8 border-l-2 border-gold pl-7" data-repeat="activities"><li class="relative" data-activity-id="14daf634-abc7-46b1-ad6b-6c5ddee54f8d"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">13:30</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Transport</span><span class="text-muted">1 hr 30 min</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Drive to the south coast</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">A relaxed drive south, with a stop for coffee if you like.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Ubud to Nusa Dua</p>
+        </li><li class="relative" data-activity-id="0ca26b53-4b76-4f45-ac8a-d3c1a164d2a0"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">15:00</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Free time</span><span class="text-muted">2 hr</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Beach time at Nusa Dua</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">Two hours on the beach. The car waits in the paid parking lot.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Nusa Dua</p>
+        <p class="mt-3 rounded-lg bg-mist px-3 py-2 text-sm" data-field="activity.tip"><b>Local tip</b> · Reef-safe sunscreen and a hat help in the afternoon sun.</p></li><li class="relative" data-activity-id="897526f4-cf8b-46b8-ad72-f50439862182"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">17:00</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Sightseeing</span><span class="text-muted">1 hr 30 min</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Uluwatu temple at golden hour</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">Walk the cliff path to the sea temple as the light turns gold.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Uluwatu</p>
+        <p class="mt-3 rounded-lg bg-mist px-3 py-2 text-sm" data-field="activity.tip"><b>Local tip</b> · Keep sunglasses and phones away from the monkeys.</p></li><li class="relative" data-activity-id="46434c54-0519-4d86-a675-0d347b318f58"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">18:30</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Activity</span><span class="text-muted">1 hr</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Kecak fire dance</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">A traditional dance performed by dozens of men at sunset. Tickets are bought on site.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Uluwatu temple amphitheatre</p>
+        <p class="mt-3 rounded-lg bg-mist px-3 py-2 text-sm" data-field="activity.tip"><b>Local tip</b> · Wear long trousers or a sarong.</p></li><li class="relative" data-activity-id="f4d34c17-4369-4949-aab2-338215ae2939"><span class="absolute -left-[35px] top-1.5 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"><span class="font-semibold text-copper" data-field="activity.time">19:30</span><span class="rounded-full bg-mist px-2.5 py-0.5 text-xs font-medium">Transport</span><span class="text-muted">1 hr 30 min</span></p>
+        <h4 class="mt-1 text-lg font-semibold text-navy" data-field="activity.title">Drive back to Ubud</h4>
+        <p class="mt-1 text-ink/80" data-field="activity.description">Traffic from Uluwatu can take 60 minutes after the show. Back at your hotel around 21:00.</p>
+        <p class="mt-1 text-sm text-muted" data-field="activity.place">Uluwatu to Ubud</p>
+        </li></ol><p class="mt-4 text-sm"><b>Transfer note:</b> Check-out day: if you leave Bali the next morning, Wayan can drive you to the airport (IDR 350.000 from Ubud).</p></article>
 </section>
-<!-- /component:meeting-pickup -->
-
-<!-- component:day-nav -->
-<nav data-component="day-nav" aria-label="Days" class="sticky top-[57px] z-30 -mx-5 mt-8 border-y border-navy/10 bg-snow/95 px-5 py-3 backdrop-blur print:hidden">
-  <ul class="flex gap-2 overflow-x-auto" data-repeat="days">
-    <li><a href="#day-1" data-day-link class="inline-flex min-h-[44px] items-center whitespace-nowrap rounded-full border border-navy/30 px-4 text-sm font-semibold text-navy aria-[current=true]:border-navy aria-[current=true]:bg-navy aria-[current=true]:text-snow">Day 1 · Kintamani</a></li>
-    <li><a href="#day-2" data-day-link class="inline-flex min-h-[44px] items-center whitespace-nowrap rounded-full border border-navy/30 px-4 text-sm font-semibold text-navy aria-[current=true]:border-navy aria-[current=true]:bg-navy aria-[current=true]:text-snow">Day 2 · Ubud</a></li>
-    <li><a href="#day-3" data-day-link class="inline-flex min-h-[44px] items-center whitespace-nowrap rounded-full border border-navy/30 px-4 text-sm font-semibold text-navy aria-[current=true]:border-navy aria-[current=true]:bg-navy aria-[current=true]:text-snow">Day 3 · South coast</a></li>
-  </ul>
-</nav>
-<!-- /component:day-nav -->
-
-<!-- component:day -->
-<article data-component="day" data-day id="day-1" class="pt-10 print:block">
-  <p class="eyebrow" data-field="days.0.label">Day 1</p>
-  <h2 class="text-3xl font-bold text-navy" data-field="days.0.title">Kintamani sunrise and the terraces</h2>
-  <p class="mt-1 text-sm text-muted" data-field="days.0.location">Kintamani, Penglipuran, Tegallalang</p>
-  <ol class="mt-8 space-y-6 border-l-2 border-gold pl-6" data-repeat="activities">
-    <!-- component:activity-item -->
-    <li data-component="activity-item" data-repeat-item class="relative">
-      <span class="absolute -left-[31px] top-1 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span>
-      <p class="text-sm font-semibold text-copper" data-field="days.0.activities.0.time">03.30 · Pickup</p>
-      <p class="mt-1 font-semibold" data-field="days.0.activities.0.title">Hotel pickup in Ubud</p>
-      <p class="mt-1 text-muted" data-field="days.0.activities.0.description">The road is empty before 04.00. Sleep in the car if you like.</p>
-      <p class="mt-2 rounded-lg bg-mist px-3 py-2 text-sm" data-field="days.0.activities.0.tip">Tip: bring a warm layer. It is cold at the rim.</p>
-    </li>
-    <!-- /component:activity-item -->
-    <li data-repeat-clone class="relative"><span class="absolute -left-[31px] top-1 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span><p class="text-sm font-semibold text-copper">05.30 · Viewpoint</p><p class="mt-1 font-semibold">Penelokan, Mount Batur at sunrise</p><p class="mt-1 text-muted">Find a spot early on the rim road. Coffee and eggs are sold at the terrace stalls.</p></li>
-    <li data-repeat-clone class="relative"><span class="absolute -left-[31px] top-1 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span><p class="text-sm font-semibold text-copper">10.00 · Village</p><p class="mt-1 font-semibold">Penglipuran bamboo village</p><p class="mt-1 text-muted">Walk the main lane and see the old houses. Entrance ticket paid on site.</p></li>
-    <li data-repeat-clone class="relative"><span class="absolute -left-[31px] top-1 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span><p class="text-sm font-semibold text-copper">13.00 · Lunch</p><p class="mt-1 font-semibold">Lunch with a valley view</p><p class="mt-1 text-muted">Tegallalang, one of several terrace restaurants on the road. Lunch not included.</p></li>
-  </ol>
-  <div class="mt-8 grid gap-4 sm:grid-cols-2" data-component="hotel-meals">
-    <div class="rounded-2xl border border-navy/15 p-5"><p class="text-sm font-semibold text-copper">Stay</p><p class="mt-1 font-semibold" data-field="days.0.hotel.name">Ubud guest house</p><p class="text-sm text-muted" data-field="days.0.hotel.area">Penestanan, Ubud</p></div>
-    <div class="rounded-2xl border border-navy/15 p-5"><p class="text-sm font-semibold text-copper">Meals</p><p class="mt-1 text-sm">Breakfast at the rim · Lunch and dinner on your own</p></div>
-  </div>
-</article>
-
-<article data-component="day" data-day id="day-2" class="pt-14 print:block">
-  <p class="eyebrow">Day 2</p>
-  <h2 class="text-3xl font-bold text-navy">Ubud art and temples</h2>
-  <p class="mt-1 text-sm text-muted">Ubud, Mas, Tirta Empul</p>
-  <ol class="mt-8 space-y-6 border-l-2 border-gold pl-6">
-    <li class="relative"><span class="absolute -left-[31px] top-1 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span><p class="text-sm font-semibold text-copper">08.00 · Pickup</p><p class="mt-1 font-semibold">Hotel pickup</p><p class="mt-1 text-muted">Breakfast at the hotel first, then we leave.</p></li>
-    <li class="relative"><span class="absolute -left-[31px] top-1 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span><p class="text-sm font-semibold text-copper">09.30 · Craft village</p><p class="mt-1 font-semibold">Mas woodcarving village</p><p class="mt-1 text-muted">Watch carvers at work. There is no pressure to buy.</p></li>
-    <li class="relative"><span class="absolute -left-[31px] top-1 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span><p class="text-sm font-semibold text-copper">12.00 · Temple</p><p class="mt-1 font-semibold">Tirta Empul spring temple</p><p class="mt-1 text-muted">Sarong required. Bring a change of clothes.</p><p class="mt-2 rounded-lg bg-mist px-3 py-2 text-sm">Tip: go before 11.00 for a quieter pool.</p></li>
-  </ol>
-</article>
-
-<article data-component="day" data-day id="day-3" class="pt-14 print:block">
-  <p class="eyebrow">Day 3</p>
-  <h2 class="text-3xl font-bold text-navy">South coast and sunset</h2>
-  <p class="mt-1 text-sm text-muted">Nusa Dua, Uluwatu</p>
-  <ol class="mt-8 space-y-6 border-l-2 border-gold pl-6">
-    <li class="relative"><span class="absolute -left-[31px] top-1 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span><p class="text-sm font-semibold text-copper">14.00 · Beach</p><p class="mt-1 font-semibold">Free time at Nusa Dua beach</p><p class="mt-1 text-muted">Two hours. The car waits in the paid lot.</p></li>
-    <li class="relative"><span class="absolute -left-[31px] top-1 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span><p class="text-sm font-semibold text-copper">17.00 · Sunset</p><p class="mt-1 font-semibold">Uluwatu temple and kecak dance</p><p class="mt-1 text-muted">Tickets for the dance are bought on site. Wear long trousers.</p></li>
-    <li class="relative"><span class="absolute -left-[31px] top-1 h-3 w-3 rounded-full bg-gold" aria-hidden="true"></span><p class="text-sm font-semibold text-copper">19.30 · Drop-off</p><p class="mt-1 font-semibold">Back to your hotel</p><p class="mt-1 text-muted">Traffic from Uluwatu can take 60 minutes after the show.</p></li>
-  </ol>
-</article>
-<!-- /component:day -->
-
-<!-- component:included -->
-<section data-component="included" class="mt-16 grid gap-6 border-t border-navy/10 pt-10 sm:grid-cols-2">
-  <div><h2 class="text-2xl font-bold text-navy">Included</h2><ul class="mt-3 space-y-2" data-repeat="included"><li><span class="text-copper" aria-hidden="true">✓</span> Private car and driver</li><li><span class="text-copper" aria-hidden="true">✓</span> Petrol and parking</li><li><span class="text-copper" aria-hidden="true">✓</span> Bottled water</li></ul></div>
-  <div><h2 class="text-2xl font-bold text-navy">Not included</h2><ul class="mt-3 space-y-2 text-muted" data-repeat="excluded"><li>– Entrance tickets</li><li>– Meals and drinks</li><li>– Kecak dance ticket</li></ul></div>
-</section>
-<!-- /component:included -->
-
-<!-- component:policies -->
-<section data-component="policies" class="mt-10 rounded-2xl bg-mist p-6 text-sm">
-  <p><span class="font-semibold">Policies.</span> <span data-field="policies">Cancel up to 24 hours before pickup for a full refund. Overtime is IDR 60.000 per hour.</span></p>
-  <p class="mt-3 text-muted" data-field="disclaimer">Times and prices can change with traffic and temple opening hours.</p>
-</section>
-<!-- /component:policies -->
-
-<!-- component:contact-cta -->
-<section data-component="contact-cta" class="mt-12 flex flex-col gap-4 rounded-2xl bg-navy p-6 text-snow sm:flex-row sm:items-center sm:justify-between print:hidden">
-  <div><p class="font-display text-2xl font-bold">Questions about this plan?</p><p class="text-sm text-snow/80" data-field="guide.name">Wayan Sudiarta · Sudiarta Bali Drive</p></div>
-  <a href="https://wa.me/6281200000000?text=Hello%20Wayan%2C%20question%20about%20my%20itinerary" class="btn-primary" data-field="guide.phone">WhatsApp Wayan</a>
-</section>
-<!-- /component:contact-cta -->
-
-<p class="mt-8 text-xs text-muted" data-field="cover.credit">Cover photo: sample image, see <a href="../../shared/photos/CREDITS.md" class="underline">photo credits</a>.</p>
+<section class="mt-16" id="practical" data-section="practical"><h2 class="font-display text-3xl font-bold text-navy sm:text-4xl">Practical information</h2><div class="mt-8 grid gap-5 md:grid-cols-2"><article class="rounded-2xl border border-navy/15 bg-snow p-7"><h3 class="text-lg font-semibold text-navy">Included</h3><ul class="mt-3 space-y-2 text-sm"><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Private car and driver for three days</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Petrol and parking</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Bottled water in the car</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>English and Bahasa Indonesia speaking driver</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Hotel pickup and drop-off in Ubud</span></li></ul></article><article class="rounded-2xl border border-navy/15 bg-snow p-7"><h3 class="text-lg font-semibold text-navy">Not included</h3><ul class="mt-3 space-y-2 text-sm"><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Entrance tickets and the kecak dance ticket</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Meals and drinks</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Hotel accommodation</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Tip for the driver (optional)</span></li></ul></article><article class="rounded-2xl border border-navy/15 bg-snow p-7"><h3 class="text-lg font-semibold text-navy">What to bring</h3><ul class="mt-3 space-y-2 text-sm"><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>A warm layer for the Kintamani sunrise</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Comfortable walking shoes</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Sarong and sash (or rent at the temple)</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Small IDR notes for tickets and parking</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Reef-safe sunscreen and a hat</span></li></ul></article><article class="rounded-2xl border border-navy/15 bg-snow p-7"><h3 class="text-lg font-semibold text-navy">Not suitable for</h3><ul class="mt-3 space-y-2 text-sm"><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Guests who cannot be ready at 03:00 on Day 1</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Travellers with limited mobility on the Tegallalang steps</span></li></ul></article><article class="rounded-2xl border border-navy/15 bg-snow p-7"><h3 class="text-lg font-semibold text-navy">Not allowed</h3><ul class="mt-3 space-y-2 text-sm"><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Smoking in the car</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Durian in the car</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Entering temples without a sarong and sash</span></li></ul></article><article class="rounded-2xl border border-navy/15 bg-snow p-7"><h3 class="text-lg font-semibold text-navy">Local tip</h3><ul class="mt-3 space-y-2 text-sm"><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Leave early. Roads in Bali are quieter before 08:00.</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Small IDR notes are easier than cards at warungs and ticket booths.</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Carry a rain jacket from November to March.</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Temples can close for ceremonies. Wayan checks the dates in advance.</span></li></ul></article><article class="rounded-2xl border border-navy/15 bg-snow p-7"><h3 class="text-lg font-semibold text-navy">Emergency contact</h3><ul class="mt-3 space-y-2 text-sm"><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Wayan Sudiarta (driver): +62 812-0000-0000</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>National emergency: 112</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Police: 110</span></li><li class="flex gap-2"><span class="text-copper" aria-hidden="true">•</span><span>Ambulance: 118</span></li></ul></article></div></section>
+<section class="mt-16" id="policies" data-section="policies"><h2 class="font-display text-3xl font-bold text-navy sm:text-4xl">Policies</h2><p class="mt-4 max-w-3xl whitespace-pre-line leading-relaxed" data-field="policies">Cancellation: free up to 24 hours before pickup. Later cancellations are charged half the day rate.
+Overtime: IDR 60.000 per extra hour.
+Payment: bank transfer or cash in IDR at the end of each day.
+Children: a child seat is available free of charge on request.</p></section>
+<footer data-section="closing" class="mt-16 bg-navy text-snow  p-8 sm:p-10"><h2 class="font-display text-3xl font-bold ">Travel well</h2><p class="mt-3">Thank you for travelling with Sudiarta Bali Drive. Message Wayan on WhatsApp any time if your plans change.</p><p class="mt-3 font-semibold">+62 812-0000-0000 · hello@example.com</p><a href="https://wa.me/6281200000000?text=Hello%20Wayan%20Sudiarta%2C%20question%20about%20my%20itinerary" class="btn-primary mt-5 print:hidden">WhatsApp Wayan</a><p class="mt-6 text-sm text-snow/80">Times and prices can change with traffic, weather and temple opening hours.</p><p class="mt-4 border-t border-snow/20 pt-4 text-xs text-snow/80">Photo credits: <a href="https://commons.wikimedia.org/wiki/File:Sunrise_on_Mount_Batur_-_panoramio_(4).jpg" target="_blank" rel="noopener noreferrer" class="underline">Alexey Komarov</a> · Wikimedia Commons (CC BY 3.0); <a href="https://commons.wikimedia.org/wiki/File:Tegallalang_Rice_Terraces_Bali.jpg" target="_blank" rel="noopener noreferrer" class="underline">Philip Nalangan</a> · Wikimedia Commons (CC BY 4.0); <a href="https://commons.wikimedia.org/wiki/File:Kuta_Bali_Indonesia_Pura-Luhur-Uluwatu-04.jpg" target="_blank" rel="noopener noreferrer" class="underline">CEphoto, Uwe Aranas</a> · Wikimedia Commons (CC BY-SA 3.0)</p><p class="mt-3 text-xs text-snow/80">Created on: Nov 12, 2026</p></footer>
 </div>
-
 </main>
 
 <!-- component:footer -->
