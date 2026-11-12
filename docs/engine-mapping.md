@@ -11,7 +11,7 @@ Sumber kebenaran: `itinerary-engine/src/contracts/itinerary.generated.d.ts` (sch
 | `scripts/make-engine-sample.mjs` | Membuat `shared/engine-sample.json` (data contoh). |
 | `shared/engine-sample.json` | 1 itinerary multi-hari, 4 tur (half/full day), 1 panduan destinasi. Semua konten **lolos `validateDraft` dan `validateForPublish`** engine. |
 | `shared/engine-labels.json` | Label resmi engine, EN dan ID. |
-| `scripts/build-engine-pages.mjs` | Menulis isi `itinerary.html` dan `activities.html` untuk Sawah dan Batu. Jalankan: `node scripts/build-engine-pages.mjs && npm run build`. |
+| `scripts/build-engine-pages.mjs` | Menulis halaman engine untuk empat template. Sawah dan Batu: mengganti isi `itinerary.html` dan `activities.html`. Segara dan Endek: membuat penuh `itinerary.html`, `activities.html`, `about.html` (head, header, footer diambil dari landing masing-masing). Jalankan: `node scripts/build-engine-pages.mjs [tema] && npm run build`. |
 
 ## Halaman itinerary (mengikuti urutan renderer engine)
 
@@ -53,3 +53,15 @@ Konsekuensi untuk engine: agar halaman tur benar-benar otomatis, perlu ditentuka
 - ID day/activity/place berupa UUID.
 - Untuk `multi_day`, engine menolak `trip.startTime` dan `trip.endTime` (field tidak berlaku).
 - Kelompok foto: setiap foto yang tampil wajib punya kredit lengkap (aturan `PHOTO_ATTRIBUTION_REQUIRED`).
+
+## Satu struktur data, desain berbeda
+
+Section dan field engine sama di semua template. Yang berbeda adalah tampilan. Variasi tata letak per template:
+
+| Blok | Sawah | Batu | Segara | Endek |
+|---|---|---|---|---|
+| Info perjalanan | empat kartu bertumpuk | empat kartu bertumpuk | panel lembut 2 kolom | panel gelap bergaya tabel |
+| Kartu tur | foto kiri-kanan bergantian | kartu horizontal | foto lebar di atas + panel fakta | foto penuh dengan teks di atas foto |
+| Explore places | grid 3 kolom | grid 3 kolom | kartu lebar (foto di samping) | baris besar bergantian |
+| Informasi praktis | kartu | kartu | kartu | kolom bergaris tanpa kartu |
+| Hero itinerary | foto penuh, teks kiri | kartu foto + teks | foto penuh, teks tengah | foto penuh gelap, teks kiri |
